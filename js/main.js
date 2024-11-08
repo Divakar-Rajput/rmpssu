@@ -15,3 +15,16 @@
             }
         });
     });
+
+    // Select the marquee element by its ID
+const marquee = document.getElementById("newsMarquee");
+
+// Pause marquee on mouseover
+marquee.addEventListener("mouseover", function() {
+    marquee.stop();
+});
+
+// Resume marquee on mouseout
+marquee.addEventListener("mouseout", function() {
+    marquee.start();
+});

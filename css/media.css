@@ -27,3 +27,13 @@
       padding: 0;
     }
   }
+  @media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+    }
+}
