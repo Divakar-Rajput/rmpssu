@@ -37,3 +37,51 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+  .slider {
+    height: 50vh; /* Reduce height on smaller screens */
+  }
+
+  .slide {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    height: 40vh; /* Further reduce height for very small screens */
+  }
+
+  .slide {
+    height: 40vh;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .home-officers {
+    flex-direction: row; /* Aligns cards horizontally on larger screens */
+  }
+
+  .border-end {
+    border-right: 1px solid #ddd; /* Right border for larger screens */
+    margin-bottom: 0;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 0.8em;
+  }
+
+  img {
+    width: 80px; /* Adjust image size for small screens */
+  }
+}
+

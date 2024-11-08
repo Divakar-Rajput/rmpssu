@@ -4,48 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Headline Marquee</title>
+    <title>About University</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
+        /* Main container */
+        .about-card {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
         }
 
-        /* Styling the marquee container */
-        .marquee-container {
-            background-color: #3b2315;
-            /* Dark brown */
-            color: #d2b48c;
-            /* Light brown */
-            font-family: Arial, sans-serif;
+        /* Image section */
+        .about-card img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        /* Content section */
+        .about-content {
+            padding: 20px;
+            background-color: #fff;
+            width: 60%;
+        }
+
+        /* Title styling */
+        .about-content h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Paragraph styling */
+        .about-content p {
+            margin: 10px 0 20px;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Read more button */
+        .read-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
             font-weight: bold;
-            font-size: 10px;
-            display: flex;
+            font-size: 14px;
             text-transform: uppercase;
         }
 
-        .marquee-text {
-            width: 100px;
-            padding: 10px;
-            background-color: yellow;
-        }
-
-        marquee {
-            padding: 10px;
+        .read-more-btn:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="marquee-container">
-        <div class="marquee-text">
-            LETEST NEWS:
+    <!-- About University Card -->
+    <div class="about-card">
+        <img src="img/university.jpg" alt="University Building">
+        <div class="about-content">
+            <h2>About University</h2>
+            <p>As a residential-cum-affiliating State University it can boast of a rich academic legacy, illustrious
+                alumni, experienced, qualified and dedicated faculty members, transparent, effective and responsive
+                administrative set up, state-of-the art library, Wi-Fi campus, ample career growth opportunities for its
+                students, advanced research facilities and a vibrant and safe campus. With its cherished goal of
+                nourishing creative talent and scientific temper among its students and sensitizing them to larger
+                socio-economic and political realities, the University aspires to contribute meaningfully to regional
+                and national development.</p>
+            <a href="#" class="read-more-btn">Read More</a>
         </div>
-        <marquee behavior="scroll" direction="left" scrollamount="5">
-            Breaking News: International Conference on AI and Machine Learning Announced | New Advances in Quantum
-            Computing | Tech Giants Release Latest Smartphones | Stock Market Hits Record Highs
-        </marquee>
     </div>
 
 </body>
