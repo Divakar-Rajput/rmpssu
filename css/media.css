@@ -1,0 +1,29 @@
+@media (max-width: 1440px) {
+    .top-bar ul li a {
+        padding: 12px 20px;
+    }
+    .top-bar ul li {
+        margin: 5px 0px;
+        padding: 0px;
+      }
+    .top-bar ul li a:hover{
+        color: var(--text-color);
+        background-color: var(--topnav-background-color);
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar ul {
+      flex-direction: column; 
+      align-items: center;
+    }
+    
+    .top-bar ul li {
+      padding: 8px;
+    }
+  
+    .top-bar ul li a {
+      padding: 0;
+    }
+  }
