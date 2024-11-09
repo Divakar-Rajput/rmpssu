@@ -17,7 +17,17 @@
 }
 
 @media (max-width: 768px) {
+  .showbtn{
+    display:block;
+  }
+  .top-bar {
+    display:none;
+  }
+  .menu-icon{
+    display: block !important;
+  }
   .top-bar ul {
+   
     flex-direction: column;
     align-items: center;
   }
@@ -43,7 +53,7 @@
   }
 
   .rmpssu-logo {
-    width: 95%;
+    width: 1000px;
   }
 }
 
@@ -120,9 +130,15 @@
 }
 
 /* profile card */
-@media (min-width: 768px) {
+@media (max-width:1024px) {
   .home-officers {
-    flex-direction: row;
+    flex-direction:column;
+  }
+
+}
+@media (max-width: 768px) {
+  .home-officers {
+    width: 85%;
   }
 
 }
@@ -138,6 +154,53 @@
 
   img {
     width: 80px;
+  }
+  .home-officers {
+    width: 100%;
+  }
+}
+@media (min-width:1024px) {
+  .about-card {
+    max-width: 85%;
+  }
+
+  .about-card img {
+    width: 35%;
+  }
+
+  .about-content {
+    width: auto;
+  }
+  .about-content h2 {
+    font-size: calc(1rem + 1.2vw);
+  }
+  .about-content p {
+    font-size: 18px;
+  }
+  .read-more-btn {
+    font-size: 18px;
+  }
+}
+@media (max-width:1024px) {
+  .about-card {
+    max-width: 90%;
+  }
+
+  .about-card img {
+    width: 30%;
+  }
+
+  .about-content {
+    width: auto;
+  }
+  .about-content h2 {
+    font-size: calc(0.7rem + 0.9vw);
+  }
+  .about-content p {
+    font-size: 13px;
+  }
+  .read-more-btn {
+    font-size: 13px;
   }
 }
 
@@ -209,12 +272,12 @@
 @media (min-width: 992px) {
 
   /* Large devices (desktops) */
-  .notice-card ul li .notice-title {
-    font-size: 1.5rem;
+  .notice-card ul li div.notice-title {
+    font-size: 20px;
   }
 
-  .notice-card ul li .notice-date {
-    font-size: 1.125rem;
+  .notice-card ul li div.notice-date {
+    font-size: 15px;
   }
 
   .col-md-4 {
@@ -224,6 +287,9 @@
   .notice-card marquee {
     height: 400px;
   }
+  .h1, h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
 }
 
 @media (min-width: 1200px) {
