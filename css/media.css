@@ -1,46 +1,101 @@
+/* top bar  */
 @media (max-width: 1440px) {
-    .top-bar ul li a {
-        padding: 12px 20px;
-    }
-    .top-bar ul li {
-        margin: 5px 0px;
-        padding: 0px;
-      }
-    .top-bar ul li a:hover{
-        color: var(--text-color);
-        background-color: var(--topnav-background-color);
-        text-decoration: none;
-    }
+  .top-bar ul li a {
+    padding: 12px 20px;
+  }
+
+  .top-bar ul li {
+    margin: 5px 0px;
+    padding: 0px;
+  }
+
+  .top-bar ul li a:hover {
+    color: var(--text-color);
+    background-color: var(--topnav-background-color);
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 768px) {
-    .top-bar ul {
-      flex-direction: column; 
-      align-items: center;
-    }
-    
-    .top-bar ul li {
-      padding: 8px;
-    }
-  
-    .top-bar ul li a {
-      padding: 0;
-    }
+  .top-bar ul {
+    flex-direction: column;
+    align-items: center;
   }
-  @media screen and (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
 
-    .dropdown-menu {
-        position: static;
-        width: 100%;
-    }
+  .top-bar ul li {
+    padding: 8px;
+  }
+
+  .top-bar ul li a {
+    padding: 0;
+  }
+}
+/* university logo */
+@media  screen and (max-width: 768px){
+  .main-header {
+    width: auto;
+    padding: 0;
+  }
+  
+  .main-header .d-inline-block {
+    margin: 5px 0px;
+  }
+  
+  .rmpssu-logo {
+    width: 95%;  
+  }
+}
+/* navigation bar */
+@media screen and (max-width: 1024px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+  }
 }
 
+
+/* letest news */
+@media screen and (max-width: 768px){
+  .marquee-container {
+    font-size: 14px;
+  }
+  
+  .marquee-text {
+    max-width: 400px;
+    width: 140px;
+  }
+}
+@media screen and (max-width: 480px){
+  .marquee-container {
+    font-size: 10px;
+  }
+  
+  .marquee-text {
+    max-width: 400px;
+    width: 140px;
+  }
+  .newgif{
+    width: 20px;
+  }
+}
+/* image slider  */
 @media (max-width: 768px) {
   .slider {
-    height: 50vh; /* Reduce height on smaller screens */
+    height: 50vh;
   }
 
   .slide {
@@ -50,25 +105,20 @@
 
 @media (max-width: 480px) {
   .slider {
-    height: 40vh; /* Further reduce height for very small screens */
+    height: 50vh;
   }
 
   .slide {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
-
+ /* profile card */
 @media (min-width: 768px) {
   .home-officers {
-    flex-direction: row; /* Aligns cards horizontally on larger screens */
+    flex-direction: row;
   }
 
-  .border-end {
-    border-right: 1px solid #ddd; /* Right border for larger screens */
-    margin-bottom: 0;
-  }
-  
 }
 
 @media (max-width: 576px) {
@@ -81,7 +131,97 @@
   }
 
   img {
-    width: 80px; /* Adjust image size for small screens */
+    width: 80px;
   }
 }
 
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .about-card img {
+    width: auto;
+    height: auto;
+  }
+
+  .about-content {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .read-more-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Small devices (portrait tablets and larger) */
+  .notice-card marquee {
+    height: 250px;
+  }
+
+  .notice-card ul li .notice-title {
+    font-size: 1.125rem;
+  }
+
+  .notice-card ul li .notice-date {
+    font-size: 0.875rem;
+  }
+
+  .col-md-4 {
+    width: 100%; /* 2 columns on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (landscape tablets and larger) */
+  .notice-card marquee {
+    height: 300px;
+  }
+
+  .col-md-4 {
+    width: 33.3333%; /* 3 columns on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large devices (desktops) */
+  .notice-card ul li .notice-title {
+    font-size: 1.5rem;
+  }
+
+  .notice-card ul li .notice-date {
+    font-size: 1.125rem;
+  }
+
+  .col-md-4 {
+    width: 33.3333%;
+  }
+
+  .notice-card marquee {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Extra large devices (large desktops) */
+  .col-md-4 {
+    width: 32%; /* 4 columns on extra-large screens */
+  }
+
+  .notice-card marquee {
+    height: 450px;
+  }
+}
