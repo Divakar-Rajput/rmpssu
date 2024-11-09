@@ -77,10 +77,11 @@ h6 {
 .main-header {
   width: 100%;
   display: flex;
-  padding-top:10px ;
+  padding-top: 10px;
   justify-content: center;
   /* height:15.5vh; */
 }
+
 .rmpssu-logo {
   max-width: 100%;
   height: auto;
@@ -242,11 +243,13 @@ marquee a:hover {
   background-size: cover;
   background-position: center;
 }
+
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
+
 .card {
   position: relative;
   display: flex;
@@ -256,10 +259,12 @@ marquee a:hover {
   background-clip: border-box;
   border-radius: .25rem;
 }
+
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
+
 .row {
   display: flex;
   width: 85%;
@@ -267,15 +272,17 @@ marquee a:hover {
   gap: 10px;
   margin-right: auto;
   margin-left: auto;
-    /* box-shadow: 0px 0px 9px 0.5px rgba(0, 0, 0, 0.426); */
+  /* box-shadow: 0px 0px 9px 0.5px rgba(0, 0, 0, 0.426); */
 
 }
-.wrap-text{
+
+.wrap-text {
   flex-wrap: wrap;
 }
+
 .admin-card {
-    margin-top: -30px;
-    margin-bottom: 30px;
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
 
 .home-officers {
@@ -335,6 +342,7 @@ marquee a:hover {
 .read-more-button:hover {
   background-color: var(--text-hover-color);
 }
+
 /* university design */
 .about-card {
   display: flex;
@@ -423,6 +431,7 @@ h1 {
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
+
 .col-md-4 {
   flex: 0 0 auto;
   width: 100%;
@@ -432,37 +441,47 @@ h1 {
 .bg-success {
   background-color: var(--text-color) !important;
 }
-.m-0{
+
+.m-0 {
   color: var(--white-color);
 }
+
 .text-light {
   color: var(--white-color);
 }
+
 .fw-bold {
   font-weight: 700 !important;
 }
+
 .card-header {
   padding: .5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, .03);
   border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
+
 .text-black {
   color: var(--black-color) !important;
 }
+
 .notice-card ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
 .notice-card marquee {
   height: 450px;
 }
-:host([direction="up"]), :host([direction="down"]) {
+
+:host([direction="up"]),
+:host([direction="down"]) {
   overflow: initial;
   overflow-y: hidden;
   white-space: initial;
 }
+
 :host {
   display: inline-block;
   overflow: hidden;
@@ -474,6 +493,7 @@ marquee {
   display: inline-block;
   width: -webkit-fill-available;
 }
+
 .notice-card ul li {
   border-bottom: solid 1px silver;
   background: url(/img/right-arrow.png) left 5px no-repeat;
@@ -481,38 +501,105 @@ marquee {
   padding-left: 21px;
   padding-bottom: 2px;
 }
+
 .notice-card ul li div.notice-title {
   font-size: 20px;
   margin-bottom: 5px;
 }
+
 .justify {
   text-align: justify;
 }
+
 .notice-card ul li div.notice-date {
   text-align: right;
   font-size: 15px;
   font-style: italic;
   color: rgb(255, 0, 0);
 }
+
 .card-footer:last-child {
   border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
 }
+
 .card-footer-links {
   text-decoration: none !important;
 }
+
 .card-footer {
   padding: .5rem 1rem;
   background-color: var(--text-color) !important;
   border-top: 1px solid rgba(0, 0, 0, .125);
 }
+
 .card-footer-links:hover .card-footer {
   background-color: var(--text-hover-color) !important;
 }
+
 .medium-font {
   font-size: 18px;
   color: var(--white-color);
   font-weight: 700 !important;
 }
 
+/* online portal */
 
-/* footer */
+.clearfix {
+  width: 100%;
+  height: 10vh;
+}
+
+.portal-title {
+  color: var(--text-color);
+}
+
+/* Portal cards container */
+.portal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portal-cards a {
+  width: 200px;
+  padding: 15px;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--text-color);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* .portal-cards a .portal-card {
+  width: 200px;
+  padding: 15px;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--text-color);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+} */
+
+.portal-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.portal-card p {
+  font-size: 1rem;
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+/* Hover effects */
+.portal-cards a:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.508);
+}

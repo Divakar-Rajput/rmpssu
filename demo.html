@@ -1,161 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-/* General container styling */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General container styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
 
-/* Card styling */
-.admin-card {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    transition: box-shadow 0.3s ease;
-}
+        /* Section title styling */
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #d9534f;
+            /* Dark red color */
+            margin-bottom: 20px;
+        }
 
-.admin-card:hover {
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-}
+        /* Portal cards container */
+        .portal-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-/* Card body */
-.card-body {
-    padding: 20px;
-}
+        /* Individual portal card styling */
+        .portal-card {
+            width: 200px;
+            padding: 15px;
+            border: 2px solid #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-/* Image styling */
-.about-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-}
+        .portal-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
 
-/* Content text styling */
-.about-content h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
+        .portal-card p {
+            font-size: 1rem;
+            color: #333;
+            font-weight: 500;
+        }
 
-.about-content p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 15px;
-}
+        /* Highlight card styling */
+        .portal-card.highlight {
+            background-color: #ffedcc;
+            /* Light orange background */
+            border-color: #ffa500;
+            /* Orange border */
+        }
 
-/* Read More button styling */
-.read-more-button {
-    font-size: 0.9rem;
-    padding: 10px 15px;
-    background-color: #dc3545;
-    color: #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
+        /* Hover effects */
+        .portal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
 
-.read-more-button:hover {
-    background-color: #c82333;
-}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portal-card {
+                width: 45%;
+            }
+        }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    /* Stacking layout on medium screens */
-    .row {
-        flex-direction: column;
-    }
-
-    /* Align text center for small screens */
-    .about-content h2 {
-        text-align: center;
-        font-size: 1.6rem;
-    }
-
-    .about-content p {
-        text-align: justify;
-        font-size: 1rem;
-    }
-
-    .about-image {
-        margin-bottom: 20px; /* Add spacing below image */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Further font resizing for tablets */
-    .about-content h2 {
-        font-size: 1.4rem;
-    }
-
-    .about-content p {
-        font-size: 0.9rem;
-    }
-
-    .read-more-button {
-        display: block;
-        text-align: center;
-        margin: 10px auto;
-    }
-}
-
-@media (max-width: 576px) {
-    /* Small screens: center-align text and resize for better readability */
-    .about-content h2 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .about-content p {
-        font-size: 0.85rem;
-        text-align: justify;
-    }
-
-    .read-more-button {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-    }
-}
-
-
-  </style>
+        @media (max-width: 576px) {
+            .portal-card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="card border shadow admin-card mt-4">
-      <div class="card-body">
-        <div class="row" style="display: flex;">
-          <div class="col-md-5">
-            <img src="img/university.jpg" class="w-100 border shadow border-black"/>
-          </div>
-          <div class="col-md-7 justify">
-            <h1>About University</h1>
-            <div class="mb-2" style="line-height: 1.5em">
-              As a residential-cum-affiliating State University it can boast of a rich academic legacy,
-              illustrious alumni, experienced, qualified and dedicated faculty members, transparent,
-              effective and responsive administrative set up, state-of-the art library, Wi-Fi campus,
-              ample career growth opportunities for its students, advanced research facilities and a
-              vibrant and safe campus. With its cherished goal of nourishing creative talent and scientific
-              temper among its students and sensitizing them to larger socio-economic and political realities,
-              the University aspires to contribute meaningfully to regional and national development.
+    <div class="container">
+        <h2 class="section-title">Online Portals</h2>
+        <div class="portal-cards">
+            <div class="portal-card">
+                <img src="img/academic-activity.png" alt="Academic Activity">
+                <p>Academic Activity</p>
             </div>
-            <a href="/introduction-about-university" class="badge bg-danger text-white read-more-button">Read More</a>
-          </div>
+            <div class="portal-card">
+                <img src="img/result.png" alt="Result">
+                <p>Result</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/admission.png" alt="Admission 2024-25">
+                <p>Admission 2024-25</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/syllabus.png" alt="UG, PG & NEP Syllabus">
+                <p>UG, PG & NEP Syllabus</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/research_form.png" alt="Application Form for Research Supervisor">
+                <p>Application Form for Research Supervisor</p>
+            </div>
+            <div class="portal-card highlight">
+                <img src="img/online-services.png" alt="Online Services for Students">
+                <p>Online Services for Students</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/teacher.png" alt="Teacher Registration for Examinership">
+                <p>Teacher Registration for Examinership</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/affiliation.png" alt="Affiliation">
+                <p>Affiliation</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/webmail.png" alt="Web Mail">
+                <p>Web Mail</p>
+            </div>
+            <div class="portal-card">
+                <img src="img/answer-key.png" alt="Key 2023-24 Special Exam">
+                <p>Key 2023-24 Special Exam</p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+
 </body>
+
 </html>

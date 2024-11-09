@@ -30,21 +30,23 @@
     padding: 0;
   }
 }
+
 /* university logo */
-@media  screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .main-header {
     width: auto;
     padding: 0;
   }
-  
+
   .main-header .d-inline-block {
     margin: 5px 0px;
   }
-  
+
   .rmpssu-logo {
-    width: 95%;  
+    width: 95%;
   }
 }
+
 /* navigation bar */
 @media screen and (max-width: 1024px) {
   .navbar-nav {
@@ -56,6 +58,7 @@
     width: 100%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navbar-nav {
     flex-direction: column;
@@ -69,29 +72,32 @@
 
 
 /* letest news */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .marquee-container {
     font-size: 14px;
   }
-  
+
   .marquee-text {
     max-width: 400px;
     width: 140px;
   }
 }
-@media screen and (max-width: 480px){
+
+@media screen and (max-width: 480px) {
   .marquee-container {
     font-size: 10px;
   }
-  
+
   .marquee-text {
     max-width: 400px;
     width: 140px;
   }
-  .newgif{
+
+  .newgif {
     width: 20px;
   }
 }
+
 /* image slider  */
 @media (max-width: 768px) {
   .slider {
@@ -113,7 +119,7 @@
   }
 }
 
- /* profile card */
+/* profile card */
 @media (min-width: 768px) {
   .home-officers {
     flex-direction: row;
@@ -167,6 +173,7 @@
 }
 
 @media (min-width: 576px) {
+
   /* Small devices (portrait tablets and larger) */
   .notice-card marquee {
     height: 250px;
@@ -181,22 +188,26 @@
   }
 
   .col-md-4 {
-    width: 100%; /* 2 columns on small screens */
+    width: 100%;
+    /* 2 columns on small screens */
   }
 }
 
 @media (min-width: 768px) {
+
   /* Medium devices (landscape tablets and larger) */
   .notice-card marquee {
     height: 300px;
   }
 
   .col-md-4 {
-    width: 33.3333%; /* 3 columns on medium screens */
+    width: 33.3333%;
+    /* 3 columns on medium screens */
   }
 }
 
 @media (min-width: 992px) {
+
   /* Large devices (desktops) */
   .notice-card ul li .notice-title {
     font-size: 1.5rem;
@@ -216,12 +227,27 @@
 }
 
 @media (min-width: 1200px) {
+
   /* Extra large devices (large desktops) */
   .col-md-4 {
-    width: 32%; /* 4 columns on extra-large screens */
+    width: 32%;
+    /* 4 columns on extra-large screens */
   }
 
   .notice-card marquee {
     height: 450px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portal-cards a {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .portal-cards a {
+    width: 100%;
   }
 }
