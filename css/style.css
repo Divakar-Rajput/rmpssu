@@ -45,13 +45,16 @@ h6 {
   font-size: 20px !important;
 }
 .time {
-  color: var(--white-color);
-  font-size: .8rem;
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 1rem;
 }
 .showbtn{
   display: none;
   width: 100%;
-  background-color: var(--text-hover-color);
+  background-image:url(/img/flag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 3.8vh;
 }
 .menu-icon{
