@@ -48,8 +48,10 @@ h6 {
 
 .time {
   color: var(--black-color);
-  font-weight: 400;
+  font-weight:bold;
   font-size: 1rem;
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
+  filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
 }
 
 .showbtn {
@@ -729,4 +731,27 @@ footer {
   .contact-us p {
     font-size: 14px;
   }
+}
+
+.submenu-background {
+  background-color: #9c3d3d;
+  width: 97% !important;
+  margin-top: 10px;
+}
+
+.submenu-background-1 {
+  background-color: #8b5656;
+  width: 95% !important;
+  margin-top: 10px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submenu-background-2 {
+  background-color: #8a6464;
+  width: 95% !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: auto;
+  margin-right: auto;
 }

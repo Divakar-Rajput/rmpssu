@@ -97,6 +97,14 @@
     position: static;
     width: 100%;
   }
+
+  .nav-link:hover {
+    background-color: var(--text-color);
+  }
+
+  .dropdown-item:hover {
+    background-color: var(--text-hover-color);
+  }
 }
 
 

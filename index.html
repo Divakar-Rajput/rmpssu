@@ -16,7 +16,7 @@
   <!-- Top Bar -->
   <div class="showbtn">
     <span id="topnavbtn" class="material-symbols-outlined menu-icon">menu</span>
-    <span style="margin-left: 15%;">
+    <span style="margin-left: 10%;">
       <span id="date" class="time"></span>&nbsp;
       <span id="time" class="time"></span>
     </span>
@@ -81,7 +81,7 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown2" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu submenu-background">
           <li><a class="dropdown-item" href="/">Chancellor</a></li>
           <li><a class="dropdown-item" href="/">Vice Chancellor</a></li>
           <li><a class="dropdown-item" href="/">Pro Vice Chancellor</a></li>
@@ -98,7 +98,7 @@
               </span>
             </label>
             <input type="checkbox" id="submenu1" class="dropdown-checkbox">
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu submenu-background-1">
               <li><a class="dropdown-item" href="/">Committee for SC/ST</a></li>
               <li><a class="dropdown-item" href="/">Minority Cell</a></li>
               <li><a class="dropdown-item" href="/">Internal Complaint Committee (ICC)</a></li>
@@ -138,22 +138,37 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown3" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
-          <li>
-            <a class="dropdown-item parent-menu-item" href="/">Faculty <span
-                class="material-symbols-outlined drop-icon">
+        <ul class="dropdown-menu submenu-background">
+          <li class="dropdown-submenu">
+            <label for="submenu01" class="dropdown-item dropdown-toggle">
+              Faculty
+              <span class="material-symbols-outlined drop-icon">
                 keyboard_arrow_right
-              </span></a>
-            <ul class="submenu dropdown-menu">
-              <li>
-                <a class="dropdown-item parent-menu-item" href="/">Faculty of Agriculture</a>
-                <ul class="submenu dropdown-menu">
+              </span>
+            </label>
+            <input type="checkbox" id="submenu01" class="dropdown-checkbox">
+            <ul class="dropdown-menu submenu-background-1">
+              <li class="dropdown-submenu">
+                <label for="submenu001" class="dropdown-item dropdown-toggle">
+                  Faculty of Agriculture
+                  <span class="material-symbols-outlined drop-icon">
+                    keyboard_arrow_right
+                  </span>
+                </label>
+                <input type="checkbox" id="submenu001" class="dropdown-checkbox">
+                <ul class="submenu dropdown-menu submenu-background-2">
                   <li><a class="dropdown-item" href="/">Department of Agruculture</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="dropdown-item parent-menu-item" href="/">Faculty of Arts</a>
-                <ul class="submenu dropdown-menu">
+              <li class="dropdown-submenu">
+                <label for="submenu002" class="dropdown-item dropdown-toggle">
+                  Faculty of Arts
+                  <span class="material-symbols-outlined drop-icon">
+                    keyboard_arrow_right
+                  </span>
+                </label>
+                <input type="checkbox" id="submenu002" class="dropdown-checkbox">
+                <ul class="submenu dropdown-menu submenu-background-2">
                   <li><a class="dropdown-item" href="/">Department of Ancient History, Archaeology & Culture</a></li>
                   <li><a class="dropdown-item" href="/">Department of English & Modern European Languages</a></li>
                   <li><a class="dropdown-item" href="/">Department of Fine Arts & Music</a></li>
@@ -169,25 +184,43 @@
                   <li><a class="dropdown-item" href="/">Department of Urdu</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="dropdown-item parent-menu-item" href="/">Faculty of Commerce</a>
-                <ul class="submenu dropdown-menu">
+              <li class="dropdown-submenu">
+                <label for="submenu003" class="dropdown-item dropdown-toggle">
+                  Faculty of Commerce
+                  <span class="material-symbols-outlined drop-icon">
+                    keyboard_arrow_right
+                  </span>
+                </label>
+                <input type="checkbox" id="submenu003" class="dropdown-checkbox">
+                <ul class="submenu dropdown-menu submenu-background-2">
                   <li><a class="dropdown-item" href="/">Department of Commerce</a></li>
                   <li><a class="dropdown-item" href="/">Department of Business Administration</a></li>
                   <li><a class="dropdown-item" href="/">Department of Economics</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="dropdown-item parent-menu-item" href="/">Faculty of Education</a>
-                <ul class="submenu dropdown-menu">
+              <li class="dropdown-submenu">
+                <label for="submenu004" class="dropdown-item dropdown-toggle">
+                  Faculty of Education
+                  <span class="material-symbols-outlined drop-icon">
+                    keyboard_arrow_right
+                  </span>
+                </label>
+                <input type="checkbox" id="submenu004" class="dropdown-checkbox">
+                <ul class="submenu dropdown-menu submenu-background-2">
                   <li><a class="dropdown-item" href="/">Department of Education</a></li>
                   <li><a class="dropdown-item" href="/">Department of Adult, Continuing & Extension Education</a></li>
                   <li><a class="dropdown-item" href="/">Department of Physical Education</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="dropdown-item parent-menu-item" href="/">Faculty of Science</a>
-                <ul class="submenu dropdown-menu">
+              <li class="dropdown-submenu">
+                <label for="submenu005" class="dropdown-item dropdown-toggle">
+                  Faculty of Science
+                  <span class="material-symbols-outlined drop-icon">
+                    keyboard_arrow_right
+                  </span>
+                </label>
+                <input type="checkbox" id="submenu005" class="dropdown-checkbox">
+                <ul class="submenu dropdown-menu submenu-background-2">
                   <li><a class="dropdown-item" href="/">Department of Biotechnology</a></li>
                   <li><a class="dropdown-item" href="/">Department of Botany</a></li>
                   <li><a class="dropdown-item" href="/">Department of Chemistry</a></li>
@@ -202,9 +235,15 @@
                   <li><a class="dropdown-item" href="/">Department of Industrial Microbiology</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="dropdown-item parent-menu-item" href="/">Faculty of Law</a>
-                <ul class="submenu dropdown-menu">
+              <li class="dropdown-submenu">
+                <label for="submenu006" class="dropdown-item dropdown-toggle">
+                  Faculty of Law
+                  <span class="material-symbols-outlined drop-icon">
+                    keyboard_arrow_right
+                  </span>
+                </label>
+                <input type="checkbox" id="submenu006" class="dropdown-checkbox">
+                <ul class="submenu dropdown-menu submenu-background-2">
                   <li><a class="dropdown-item" href="/">Department of Law</a></li>
                 </ul>
               </li>
@@ -213,11 +252,15 @@
           <li><a class="dropdown-item" href="/">Programs Offered</a></li>
           <li><a class="dropdown-item" href="/">Syllabi</a></li>
           <li><a class="dropdown-item" href="/">UGC-HRD Center</a></li>
-          <li>
-            <a class="dropdown-item parent-menu-item" href="/">IQAC<span class="material-symbols-outlined drop-icon">
+          <li class="dropdown-submenu">
+            <label for="submenu2" class="dropdown-item dropdown-toggle">
+              IQAC
+              <span class="material-symbols-outlined drop-icon">
                 keyboard_arrow_right
-              </span></a>
-            <ul class="submenu dropdown-menu">
+              </span>
+            </label>
+            <input type="checkbox" id="submenu2" class="dropdown-checkbox">
+            <ul class="dropdown-menu submenu-background-1">
               <li><a class="dropdown-item" href="/">IQAC</a></li>
               <li><a class="dropdown-item" href="/">IQAC Workshop Seminar / Symposium</a></li>
               <li><a class="dropdown-item" href="/">Revised SSR Cycle Two</a></li>
@@ -240,14 +283,17 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown4" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu submenu-background">
           <li><a class="dropdown-item" href="/">Reseach Policy</a></li>
-          <li>
-            <a class="dropdown-item parent-menu-item" href="/">Publications<span
-                class="material-symbols-outlined drop-icon">
+          <li class="dropdown-submenu">
+            <label for="submenu3" class="dropdown-item dropdown-toggle">
+              Publications
+              <span class="material-symbols-outlined drop-icon">
                 keyboard_arrow_right
-              </span></a>
-            <ul class="submenu dropdown-menu">
+              </span>
+            </label>
+            <input type="checkbox" id="submenu3" class="dropdown-checkbox">
+            <ul class="dropdown-menu submenu-background-1">
               <li><a class="dropdown-item" href="/">Reseach Papers</a></li>
               <li><a class="dropdown-item" href="/">Books / Chapters</a></li>
             </ul>
@@ -255,11 +301,15 @@
           <li><a class="dropdown-item" href="/">Research Projects</a></li>
           <li><a class="dropdown-item" href="/">Project Report</a></li>
           <li><a class="dropdown-item" href="/">Consultancy Policy</a></li>
-          <li>
-            <a class="dropdown-item parent-menu-item" href="/">Ph.D.<span class="material-symbols-outlined drop-icon">
+          <li class="dropdown-submenu">
+            <label for="submenu4" class="dropdown-item dropdown-toggle">
+              Ph.D.
+              <span class="material-symbols-outlined drop-icon">
                 keyboard_arrow_right
-              </span></a>
-            <ul class="submenu dropdown-menu">
+              </span>
+            </label>
+            <input type="checkbox" id="submenu4" class="dropdown-checkbox">
+            <ul class="dropdown-menu submenu-background-1">
               <li><a class="dropdown-item" href="/">Ph.D.</a></li>
               <li><a class="dropdown-item" href="/">Pre Ph.D. (2019-20)</a></li>
               <li><a class="dropdown-item" href="/">D.R.C.</a></li>
@@ -277,17 +327,21 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown5" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu submenu-background">
           <li><a class="dropdown-item" href="/">Central Library</a></li>
           <li><a class="dropdown-item" href="/">Computer Center</a></li>
           <li><a class="dropdown-item" href="/">Hostels</a></li>
           <li><a class="dropdown-item" href="/">Guest House</a></li>
           <li><a class="dropdown-item" href="/">Green Campus</a></li>
-          <li>
-            <a class="dropdown-item parent-menu-item" href="/">Museum<span class="material-symbols-outlined drop-icon">
+          <li class="dropdown-submenu">
+            <label for="submenu5" class="dropdown-item dropdown-toggle">
+              Museum
+              <span class="material-symbols-outlined drop-icon">
                 keyboard_arrow_right
-              </span></a>
-            <ul class="submenu dropdown-menu">
+              </span>
+            </label>
+            <input type="checkbox" id="submenu5" class="dropdown-checkbox">
+            <ul class="dropdown-menu submenu-background-1">
               <li><a class="dropdown-item" href="/">Purvanchal Sangrahalaya</a></li>
               <li><a class="dropdown-item" href="/">Science Museum</a></li>
               <li><a class="dropdown-item" href="/">Arts Museum</a></li>
@@ -300,11 +354,15 @@
           <li><a class="dropdown-item" href="/">Samvad Bhawan</a></li>
           <li><a class="dropdown-item" href="/">Examination & Evaluation Center</a></li>
           <li><a class="dropdown-item" href="/">Health Center</a></li>
-          <li>
-            <a class="dropdown-item parent-menu-item" href="/">Gallery<span class="material-symbols-outlined drop-icon">
+          <li class="dropdown-submenu">
+            <label for="submenu6" class="dropdown-item dropdown-toggle">
+              Gallery
+              <span class="material-symbols-outlined drop-icon">
                 keyboard_arrow_right
-              </span></a>
-            <ul class="submenu dropdown-menu">
+              </span>
+            </label>
+            <input type="checkbox" id="submenu6" class="dropdown-checkbox">
+            <ul class="dropdown-menu submenu-background-1">
               <li><a class="dropdown-item" href="/">Photo</a></li>
               <li><a class="dropdown-item" href="/">Video</a></li>
               <li><a class="dropdown-item" href="/">360 View</a></li>
@@ -321,7 +379,7 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown6" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu submenu-background">
           <li><a class="dropdown-item" href="/">Alumni Cell</a></li>
           <li><a class="dropdown-item" href="/">Athletic Association</a></li>
           <li><a class="dropdown-item" href="/">Delegacy</a></li>
@@ -339,7 +397,7 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown7" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu submenu-background">
           <li><a class="dropdown-item" href="https://rmpsuweb.in/">Admissions</a></li>
           <li><a class="dropdown-item" href="/">Results</a></li>
           <li><a class="dropdown-item" href="/">Alumni</a></li>
