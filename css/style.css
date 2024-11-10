@@ -41,43 +41,52 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
 }
+
 .material-symbols-outlined {
   font-size: 20px !important;
 }
+
 .time {
   color: var(--black-color);
   font-weight: 400;
   font-size: 1rem;
 }
-.showbtn{
+
+.showbtn {
   display: none;
   width: 100%;
-  background-image:url(flag.jpg);
+  background-image: url(flag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 3.8vh;
 }
-.menu-icon{
-  display:none !important;
+
+.menu-icon {
+  display: none !important;
   float: left !important;
   margin: auto;
   color: #fff;
   background-color: #8e0000;
   padding: 5px;
 }
-.submenu-icon{
+
+.submenu-icon {
   float: right !important;
   margin: auto;
   color: #fff;
   background-color: #8e0000;
   padding: 5px;
 }
-.show-class{
-  display: block !important;;
+
+.show-class {
+  display: block !important;
 }
-.hide-class{
+
+.hide-class {
   display: none !important;
 }
+
 .top-bar {
   display: flex;
   align-items: center;
@@ -85,7 +94,8 @@ h6 {
   width: 100%;
   background-color: var(--topnav-background-color);
   padding: 10px 0px;
-  text-align:center;  
+  text-align: center;
+  transition: .5s linear;
 }
 
 .top-bar ul {
@@ -128,15 +138,17 @@ h6 {
 }
 
 /* Navigation Styles */
-.submenu{
-display: none;
+.submenu {
+  display: none;
 }
+
 .navbar {
   background-color: var(--text-color);
   color: var(--white-color);
-  display:none;
+  /* display:none; */
   justify-content: space-between;
   padding: 0rem;
+  transition: .5s linear;
 }
 
 .navbar-nav {
@@ -614,6 +626,7 @@ marquee {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .portal-card img {
   width: 60px;
   height: 60px;
@@ -634,8 +647,8 @@ marquee {
 
 /* footer */
 footer {
-  background-color:var(--text-color);
-  color:var(--white-color);
+  background-color: var(--text-color);
+  color: var(--white-color);
   padding: 20px 0;
 }
 
@@ -663,7 +676,7 @@ footer {
 }
 
 .footer-section ul li a {
-  color:var(--white-color);
+  color: var(--white-color);
   font-size: 18px;
   text-decoration: none;
   transition: .3s linear;
@@ -707,10 +720,12 @@ footer {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+
 @media (max-width:1024px) {
   .footer-section ul li a {
     font-size: 14px;
   }
+
   .contact-us p {
     font-size: 14px;
   }
