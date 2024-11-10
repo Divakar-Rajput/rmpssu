@@ -20,18 +20,13 @@
   :root {
     --element-height: 0px;
   }
-
-  .showbtn {
-    display: block;
-  }
-
   .top-bar {
     padding: 0px 0px;
     height: var(--element-height);
     overflow: hidden;
   }
 
-  .menu-icon {
+  .left-icon, .right-icon {
     display: block !important;
   }
 
@@ -49,20 +44,15 @@
     padding: 0;
   }
 }
-
 /* university logo */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .main-header {
-    width: auto;
-    padding: 0;
+    height:20px;
+    padding: 15px 0px 3px 0px;
   }
-
-  .main-header .d-inline-block {
-    margin: 5px 0px;
-  }
-
   .rmpssu-logo {
-    width: 1000px;
+    margin-left: 40px;
+    transform: scale(1.2);
   }
 }
 

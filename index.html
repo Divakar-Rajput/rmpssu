@@ -14,14 +14,15 @@
 
 <body>
   <!-- Top Bar -->
-  <div class="showbtn">
-    <span id="topnavbtn" class="material-symbols-outlined menu-icon">menu</span>
-    <span style="margin-left: 10%;">
+  <div class="time-section">
+    <span id="topnavbtn" class="material-symbols-outlined left-icon">menu</span>
+    <span class="time-container">
       <span id="date" class="time"></span>&nbsp;
       <span id="time" class="time"></span>
     </span>
-    <span id="subnavbtn" class="material-symbols-outlined submenu-icon">menu</span>
+    <span id="subnavbtn" class="material-symbols-outlined right-icon">menu</span>
   </div>
+
   <div class="top-bar" id="topnav-list">
     <ul>
       <li><a href="#">Downloads</a></li>
@@ -59,7 +60,7 @@
           </span>
         </label>
         <input type="checkbox" id="dropdown1" class="dropdown-checkbox">
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu submenu-background">
           <li><a class="dropdown-item" href="/introduction-about-university">Introduction</a></li>
           <li><a class="dropdown-item" href="/vission-and-mission">Vision & Mission</a></li>
           <li><a class="dropdown-item" href="/core-values">Core Values</a></li>
@@ -454,7 +455,7 @@
 
 
   <div class="container">
-    <div class="card border shadow admin-card">
+    <div class="card border admin-card">
       <div class="card-body">
         <div class="row home-officers">
           <div class="col-4 border-end">

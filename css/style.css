@@ -43,44 +43,45 @@ h6 {
 }
 
 .material-symbols-outlined {
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
 
-.time {
-  color: var(--black-color);
-  font-weight:bold;
-  font-size: 1rem;
-  text-shadow: 0px 0px 2px rgb(255, 255, 255);
-  filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
-}
-
-.showbtn {
-  display: none;
+.time-section {
   width: 100%;
   background-image: url(flag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 3.8vh;
+  display: flex;
+  border: 2px solid var(--text-color);
+  justify-content: space-between;
+  box-shadow: inset 0px 0px 10px #8f1818aa, inset 0px 0px 10px #8f1818aa;
+
 }
 
-.menu-icon {
+.left-icon,
+.right-icon {
   display: none !important;
-  float: left !important;
-  margin: auto;
   color: #fff;
   background-color: #8e0000;
   padding: 5px;
 }
 
-.submenu-icon {
-  float: right !important;
-  margin: auto;
-  color: #fff;
-  background-color: #8e0000;
-  padding: 5px;
+.time-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
 }
 
+.time {
+  color: #030303;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
+  filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+}
 .show-class {
   display: block !important;
 }
@@ -126,17 +127,18 @@ h6 {
 }
 
 .main-header {
-  width: 100%;
+  padding: 12px 0px 3px 0px;
   display: flex;
-  padding-top: 10px;
-  justify-content: start;
-  /* height:15.5vh; */
+  align-items: center;
+  overflow: hidden;
 }
 
 .rmpssu-logo {
   max-width: 100%;
+  width: 100%;
   height: auto;
-
+  margin-left: 0px;
+  transform: scale(1);
 }
 
 /* Navigation Styles */
@@ -200,7 +202,7 @@ h6 {
   min-width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  top: 50px;
+  top: 42px;
   left: 0;
   border-radius: 4px;
   overflow: hidden;
@@ -328,8 +330,6 @@ marquee a:hover {
   gap: 10px;
   margin-right: auto;
   margin-left: auto;
-  /* box-shadow: 0px 0px 9px 0.5px rgba(0, 0, 0, 0.426); */
-
 }
 
 .wrap-text {
@@ -526,7 +526,9 @@ h1 {
   padding: 0;
   list-style-type: none;
 }
-
+.shadow{
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.451);
+}
 .notice-card marquee {
   height: 450px;
 }
@@ -626,6 +628,9 @@ marquee {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: var(--text-color);
   text-align: center;
+  border: 3px solid var(--white-color);
+  box-shadow: 0px 0px 6px .1px rgba(0, 0, 0, 0.508),
+    inset 0px 0px 6px .1px rgb(0, 0, 0), inset 0px 0px 6px .1px rgb(0, 0, 0), inset 0px 0px 6px .1px rgb(0, 0, 0);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
