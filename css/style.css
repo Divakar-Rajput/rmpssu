@@ -46,6 +46,7 @@ h6 {
   font-size: 25px !important;
 }
 
+/* time on top start */
 .time-section {
   width: 100%;
   background-image: url(flag.jpg);
@@ -53,7 +54,8 @@ h6 {
   background-size: cover;
   background-position: center;
   display: flex;
-  border: 2px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
   justify-content: space-between;
   box-shadow: inset 0px 0px 10px #8f1818aa, inset 0px 0px 10px #8f1818aa;
 
@@ -82,6 +84,9 @@ h6 {
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
   filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
 }
+
+/* time on top end */
+
 .show-class {
   display: block !important;
 }
@@ -90,6 +95,7 @@ h6 {
   display: none !important;
 }
 
+/* Top Bar start */
 .top-bar {
   display: flex;
   align-items: center;
@@ -126,6 +132,9 @@ h6 {
   text-decoration: none;
 }
 
+/* Top Bar end */
+
+/* logo start */
 .main-header {
   padding: 12px 0px 3px 0px;
   display: flex;
@@ -141,11 +150,13 @@ h6 {
   transform: scale(1);
 }
 
-/* Navigation Styles */
+/* logo end */
+
 .submenu {
   display: none;
 }
 
+/* subnavbar start */
 .navbar {
   background-color: var(--text-color);
   color: var(--white-color);
@@ -179,12 +190,10 @@ h6 {
   background-color: var(--text-hover-color);
 }
 
-/* Dropdown Styles */
 .dropdown {
   position: relative;
 }
 
-/* Checkbox Hack for Click Dropdown */
 .dropdown-toggle {
   cursor: pointer;
   display: block;
@@ -208,7 +217,6 @@ h6 {
   overflow: hidden;
 }
 
-/* Checkbox Hack to Toggle Dropdown */
 .dropdown-checkbox:checked+.dropdown-menu {
   display: block;
 }
@@ -250,6 +258,9 @@ h6 {
   text-decoration: none;
 }
 
+/* subnavbar end */
+
+/* letest news start */
 .marquee-container {
   background-color: rgb(245, 235, 157);
   color: var(--black-color);
@@ -281,12 +292,14 @@ marquee a:hover {
   color: var(--blue-color);
 }
 
+/* letest news end */
+
+/* image slider start */
 .slider {
   position: relative;
   width: 100%;
   max-width: 100%;
   height: 70vh;
-  /* Adjusts to 70% of viewport height */
   overflow: hidden;
 }
 
@@ -302,6 +315,9 @@ marquee a:hover {
   background-position: center;
 }
 
+/* image slider end */
+
+/* home-officers cards start */
 .container {
   width: 100%;
   margin-right: auto;
@@ -399,7 +415,10 @@ marquee a:hover {
   background-color: var(--text-hover-color);
 }
 
-/* university design */
+/* home-officers cards end */
+
+
+/* university about card start */
 .about-card {
   display: flex;
   flex-direction: row;
@@ -412,27 +431,23 @@ marquee a:hover {
   background-color: #fff;
 }
 
-/* Image section */
 .about-card img {
   width: 40%;
   padding: 10px;
   object-fit: cover;
 }
 
-/* Content section */
 .about-content {
   padding: 20px;
   width: 60%;
 }
 
-/* Title styling */
 .about-content h2 {
   margin: 0;
   font-size: calc(1.375rem + 1.5vw);
   color: #333;
 }
 
-/* Paragraph styling */
 .about-content p {
   margin: 10px 0 20px;
   font-size: 20px;
@@ -441,7 +456,6 @@ marquee a:hover {
   line-height: 1.5em;
 }
 
-/* Read more button */
 .read-more-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -458,7 +472,9 @@ marquee a:hover {
   background-color: var(--text-hover-color);
 }
 
-/* notic/events/ circulers */
+/* university about card end */
+
+/* notic/events/ circulers  start*/
 .text-primary {
   --bs-text-opacity: 1;
   color: var(--text-color);
@@ -526,9 +542,11 @@ h1 {
   padding: 0;
   list-style-type: none;
 }
-.shadow{
+
+.shadow {
   box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.451);
 }
+
 .notice-card marquee {
   height: 450px;
 }
@@ -600,18 +618,18 @@ marquee {
   font-weight: 700 !important;
 }
 
-/* online portal */
+/* notic/events/ circulers  end*/
 
 .clearfix {
   width: 100%;
   height: 5vh;
 }
 
+/* online portal start*/
 .portal-title {
   color: var(--text-color);
 }
 
-/* Portal cards container */
 .portal-cards {
   display: flex;
   flex-wrap: wrap;
@@ -652,7 +670,9 @@ marquee {
   box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.508);
 }
 
-/* footer */
+/* online portal end*/
+
+/* footer start*/
 footer {
   background-color: var(--text-color);
   color: var(--white-color);
@@ -707,6 +727,9 @@ footer {
   height: 24px;
 }
 
+/* footer end*/
+
+/* bottom footer start */
 .footer-bottom {
   text-align: center;
   padding: 20px 0px 20px 0px;
@@ -728,15 +751,7 @@ footer {
   text-decoration: underline;
 }
 
-@media (max-width:1024px) {
-  .footer-section ul li a {
-    font-size: 14px;
-  }
-
-  .contact-us p {
-    font-size: 14px;
-  }
-}
+/* bottom footer end */
 
 .submenu-background {
   background-color: #9c3d3d;
@@ -760,3 +775,55 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* notice page start */
+.table {
+  width: 80%;
+  border-radius: 8px;
+  border-spacing: 0;
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid var(--text-color);
+}
+.table th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 26px;
+  padding: 18px 30px;
+}
+.table thead tr {
+  background-color: var(--text-color);
+}
+.table td {
+  padding: 30px 30px 31px;
+  font-size:20px;
+  color: black;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.table tbody tr:nth-child(odd) {
+  background: white;
+}
+.table tbody tr:nth-child(even) {
+  background: #eaeae9a2;
+}
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: var(--text-color);
+  text-decoration: none;
+}
+.btn:hover {
+  background-color:var(--text-hover-color);
+}
+/* notice page end */

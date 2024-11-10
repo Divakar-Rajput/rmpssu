@@ -20,13 +20,15 @@
   :root {
     --element-height: 0px;
   }
+
   .top-bar {
     padding: 0px 0px;
     height: var(--element-height);
     overflow: hidden;
   }
 
-  .left-icon, .right-icon {
+  .left-icon,
+  .right-icon {
     display: block !important;
   }
 
@@ -44,12 +46,14 @@
     padding: 0;
   }
 }
+
 /* university logo */
 @media screen and (max-width: 480px) {
   .main-header {
-    height:20px;
+    height: 20px;
     padding: 15px 0px 3px 0px;
   }
+
   .rmpssu-logo {
     margin-left: 40px;
     transform: scale(1.2);
@@ -344,5 +348,15 @@
 @media (max-width: 576px) {
   .portal-cards a {
     width: 100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .footer-section ul li a {
+    font-size: 14px;
+  }
+
+  .contact-us p {
+    font-size: 14px;
   }
 }
