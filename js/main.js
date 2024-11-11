@@ -111,3 +111,32 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 updateClock();
+
+
+window.addEventListener('load', function () {
+    const loader = document.querySelector('.loader');
+    const loaderMask = document.querySelector('.loader-mask');
+    loader.style.opacity = '1';
+    loader.style.transition = 'opacity 0.5s ease';
+    loader.style.opacity = '0';
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 500);
+    setTimeout(() => {
+        loaderMask.style.opacity = '1';
+        loaderMask.style.transition = 'opacity 0.5s ease';
+        loaderMask.style.opacity = '0';
+        setTimeout(() => {
+            loaderMask.style.display = 'none';
+        }, 500);
+    }, 350);
+});
+
+
+document.getElementById('backButton').addEventListener('click', function() {
+    window.history.back();
+  });
+document.getElementById('forwardButton').addEventListener('click', function() {
+    window.history.forward();
+  });
+    
