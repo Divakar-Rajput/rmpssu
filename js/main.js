@@ -5,8 +5,7 @@ document.querySelectorAll('.dropdown-close').forEach(closeBtn => {
     });
 });
 
-
-
+// only one dropdown menu open at a time
 document.addEventListener('click', function (event) {
     const dropdowns = document.querySelectorAll('.dropdown-checkbox');
     dropdowns.forEach(dropdown => {
