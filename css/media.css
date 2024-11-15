@@ -328,11 +328,11 @@
   }
 
   .notice-card ul li .notice-title {
-    font-size: 1.125rem;
+    font-size: 14px;
   }
 
   .notice-card ul li .notice-date {
-    font-size: 0.875rem;
+    font-size: 10px;
   }
 
   .col-md-4 {
@@ -358,11 +358,11 @@
 
   /* Large devices (desktops) */
   .notice-card ul li div.notice-title {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .notice-card ul li div.notice-date {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .col-md-4 {
@@ -427,6 +427,12 @@
   table tbody td {
     font-size: 14px;
   }
+  table tbody td a{
+    font-size: 14px;
+  }
+  table tbody td:last-child {
+    font-size: 12px;
+  }
 
   .btn {
     font-size: 14px;
@@ -450,5 +456,10 @@
   .hisbtn {
     font-size: 12px;
     padding: 7px;
+  }
+}
+@media (max-width: 768px) {
+  .contactus-text{
+    height: 25vh;
   }
 }

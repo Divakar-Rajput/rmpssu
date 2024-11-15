@@ -98,7 +98,7 @@ function updateClock() {
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
-    const days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     const day = days[now.getDay()];
     const month = months[now.getMonth()];
