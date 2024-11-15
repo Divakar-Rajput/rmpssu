@@ -955,7 +955,7 @@ table tbody tr:nth-last-child(odd) {
 .contactus-text{
   height: 20vh;
   font-size: 25px;
-  background-image: url(/img/university.jpg);
+  background-image: url(university.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
