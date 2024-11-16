@@ -580,7 +580,9 @@ marquee {
 
 .notice-card ul li {
   border-bottom: solid 1px silver;
-  background-image: url(right-arrow.png) left 5px no-repeat;
+  background-image:url(right-arrow.png);
+  background-position: left 5px;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
   padding-left: 21px;
   padding-bottom: 2px;
@@ -879,13 +881,14 @@ table tbody tr:nth-last-child(odd) {
   font-size:large;
   border-radius: 8px;
   border: 2px solid var(--text-color);
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.283);
+  box-shadow: 0px 0px 6px 1px #8e000072;
 }
 .inputfilters input::placeholder{
   color: rgb(161, 161, 161);
   font-size:large;
   text-transform: capitalize;
 }
+
 .historybtn {
   width: 100%;
   display: flex;
@@ -1131,3 +1134,60 @@ h5.bullet-detail {
   }
 }
 /* contact page css end */
+
+.new-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 5px;
+  background: #ff5252;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 12px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+/* syllabus page start */
+hr {
+  margin: 10px 0px;
+  height: 2px;
+  background-color: #8e0000;
+}
+.col-md-5 p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+.col-md-5 h3 {
+  text-align: center;
+  color: var(--text-color);
+}
+.col-md-5 p a {
+  display: inline-block;
+  margin: 5px 8px;
+  padding: 6px 12px;
+  background-color: var(--text-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.col-md-5 p a:hover {
+  background-color: var(--text-hover-color);
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .col-md-5 p {
+    font-size: 12px;
+  }
+}
+/* syllabus page end */
