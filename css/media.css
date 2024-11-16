@@ -109,6 +109,7 @@
   }
 
   .rmpssu-logo {
+    width: 99%;
     margin-left: 40px;
     transform: scale(1.2);
   }
@@ -461,5 +462,68 @@
 @media (max-width: 768px) {
   .contactus-text{
     height: 25vh;
+  }
+}
+
+/* Default styling for larger screens is already defined */
+
+/* For tablets and small desktops (max width 1024px) */
+@media (max-width: 1024px) {
+  .searchfilters {
+    width: 50%; /* Adjust width */ /* Reduce gap */
+    padding-right: 5px; /* Adjust padding */
+  }
+
+  .inputfilters input {
+    font-size: medium; /* Reduce font size */
+    padding: 8px 0px; /* Adjust padding */
+    padding-left: 15px; /* Adjust left padding */
+  }
+  .inputfilters input::placeholder{
+    font-size: medium;
+  }
+}
+
+/* For mobile devices (max width 768px) */
+@media (max-width: 768px) {
+  .searchfilters {
+    width: 70%; /* Increase width for smaller devices */
+  }
+
+  .inputfilters input {
+    font-size: medium; /* Further reduce font size */
+    padding: 7px 0px; /* Adjust padding for smaller input */
+    padding-left: 10px; /* Adjust left padding */
+  }
+  .searchfilters span {
+    font-size: medium;
+  }
+  .searchfilters h6 {
+    font-size: x-small;
+  }
+  .inputfilters input::placeholder{
+    font-size: medium;
+  }
+}
+
+/* For very small devices (max width 480px) */
+@media (max-width: 480px) {
+  .searchfilters {
+    width: 90%; /* Almost full width */
+  }
+
+  .inputfilters input {
+    font-size: small; /* Small font for very small devices */
+    padding: 10px 0px; /* Compact padding */
+    padding-left: 8px; /* Adjust padding */
+  }
+  .searchfilters span {
+    font-size: small;
+  }
+  .searchfilters h6 {
+    font-size: xx-small;
+  }
+  .inputfilters input::placeholder{
+    font-size: small;
   }
 }

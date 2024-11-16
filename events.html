@@ -466,19 +466,29 @@
             <span id="forwardButton" class="hisbtn">Next ➡️</span>
         </div>
         <h1 style="text-align: center; color: #8e0000;">Events</h1>
-        <table>
+        <div class="searchfilters">
+            <span>Search events here by date & name</span>
+            <h6>(Note: Enter month name, year or day to find quickly)</h6>
+            <div class="inputfilters">
+                <input type="text" id="searchName" placeholder="Search here to find notices by Date & Name...."
+                    oninput="filterTable('name')">
+            </div>
+        </div>
+        <br>
+        <table id="noticesTable">
             <thead>
                 <tr>
                     <th>Notice</th>
                     <th>Publish Date</th>
-                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>#</td>
                     <td>#</td>
-                    <td><a href="#" class="btn" download>#</a></td>
+                </tr>
+                <tr id="notfound" style=" display:none;">
+                    <td colspan="2" style="text-align: center; font-size: x-large;">Any Notice is not availabel</td>
                 </tr>
             </tbody>
         </table>

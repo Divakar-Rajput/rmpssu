@@ -580,7 +580,7 @@ marquee {
 
 .notice-card ul li {
   border-bottom: solid 1px silver;
-  background: url(/img/right-arrow.png) left 5px no-repeat;
+  background-image: url(right-arrow.png) left 5px no-repeat;
   margin-bottom: 10px;
   padding-left: 21px;
   padding-bottom: 2px;
@@ -813,6 +813,10 @@ table tbody td {
   padding: 20px 10px;
   font-size: 20px;
 }
+table tbody td:nth-child(2) {
+ min-width:100px;
+ text-align: center;
+}
 table tbody td a {
   text-align: center;
   font-size: 20px;
@@ -834,7 +838,7 @@ table tbody tr:nth-last-child(odd) {
 }
 
 .btn {
-  font-size: 17px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
@@ -849,8 +853,39 @@ table tbody tr:nth-last-child(odd) {
 }
 
 /* notice page end */
-
-/* history btn */
+.searchfilters{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  border-radius: 8px;
+  padding-right: 10px;
+}
+.inputfilters{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.inputfilters input{
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px;
+  border: none;
+  padding-left: 20px;
+  border-radius: 4px;
+  outline: none;
+  font-size:large;
+  border-radius: 8px;
+  border: 2px solid var(--text-color);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.283);
+}
+.inputfilters input::placeholder{
+  color: rgb(161, 161, 161);
+  font-size:large;
+  text-transform: capitalize;
+}
 .historybtn {
   width: 100%;
   display: flex;
@@ -999,7 +1034,7 @@ table tbody tr:nth-last-child(odd) {
 }
 
 .icon {
-  width: 50px;
+  width: 70px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -1011,7 +1046,7 @@ table tbody tr:nth-last-child(odd) {
   z-index: 101;
 }
 .icon span {
- font-size: 1.6rem;
+ font-size: 2.2rem;
  font-weight: bold;
 }
 
@@ -1030,11 +1065,11 @@ table tbody tr:nth-last-child(odd) {
   margin-top: 20px !important;
   font-size: 1.5rem;
   color: #333;
-  line-height: 50px;
+  line-height: 30px;
 }
 
 h5.bullet-detail {
-  font-size: 1.5 rem;
+  font-size: 1.3rem;
   margin: 0;
   word-spacing: 10px;
 }
@@ -1051,19 +1086,15 @@ h5.bullet-detail {
 .icon-blue {color: #1c7ed6; border: 4px solid #1c7ed6; }
 .bg-blue { background:linear-gradient(to right, #1c7ed6 0%,#1c7fd683 100%); }
 
-
-/* Map Styling */
 .bullet-detail iframe {
   border: none;
   height: 70vh;
 }
 
-/* Spacing */
 .mt-1 { margin-top: 5px; }
 .mt-5 { margin-top: 20px; }
 .mb-5 { margin-bottom: 20px; }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
   .row {
       flex-direction: column;
@@ -1072,6 +1103,13 @@ h5.bullet-detail {
   .col-md-5, .col-md-7 {
       width: 100%;
       padding: 0;
+  }
+  .bullet-detail{
+    font-size: 14px !important;
+    line-height: 25px;
+  }
+  .bullet-detail ul li{
+    list-style: none;
   }
   .icon{
     width: 60px;
@@ -1088,22 +1126,8 @@ h5.bullet-detail {
   .title {
       padding: 5px 0;
   }
+  .page-text{
+   font-size:small;
+  }
 }
-
-/* @media (max-width: 480px) {
-
-  .bullet-detail {
-      font-size: 14px;
-  }
-
-  .icon {
-      width: 25px;
-      height: 25px;
-      font-size: 16px;
-  }
-
-  .bullet-detail iframe {
-      height: 300px;
-  }
-} */
 /* contact page css end */

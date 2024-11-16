@@ -466,71 +466,71 @@
             <span id="forwardButton" class="hisbtn">Next ➡️</span>
         </div>
         <h1 style="text-align: center; color: #8e0000;">Circulars</h1>
-        <table>
+        <div class="searchfilters">
+            <span>Search Circulars here by date & name</span>
+            <h6>(Note: Enter month name, year or day to find quickly)</h6>
+            <div class="inputfilters">
+                <input type="text" id="searchName" placeholder="Search here to find notices by Date & Name...."
+                    oninput="filterTable('name')">
+            </div>
+        </div>
+        <br>
+        <table id="noticesTable">
             <thead>
                 <tr>
                     <th>Notice</th>
                     <th>Publish Date</th>
-                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>वेब रजिस्ट्रेशन के संबंध में</td>
-                    <td>26/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>26-Sep-2024</td>
                 </tr>
                 <tr>
                     <td>समर्थ इ0आर0पी0 के क्रियान्वयन के संबंध में</td>
-                    <td>20/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>20-Sep-2024</td>
                 </tr>
                 <tr>
                     <td>महाविद्यालय से संबंधित सूचना गूगल फॉर्म के द्वारा प्रेषित किए जाने के संबंध में</td>
-                    <td>12/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>12-Sep-2024</td>
                 </tr>
                 <tr>
                     <td> संशोधित परीक्षा कार्यक्रम के संबंध में</td>
-                    <td>12/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>12-Sep-2024</td>
                 </tr>
                 <tr>
                     <td>राष्ट्रीय दृष्टिहीन संघ, दृष्टि दिव्यांग कर्मचारी एसोसिएशन संघ एवं राष्ट्रीय दृष्टिबाधितार्थ
                         संस्था
                         के प्रतिनिधियों की मांग पर विचार-विमर्श किए जाने हेतु</td>
-                    <td>08/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>08-Sep-2024</td>
                 </tr>
                 <tr>
                     <td>Compromised सरकारी वेबसाइट करने के लिए CERT-IN के संबंध में</td>
-                    <td>08/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>08-Sep-2024</td>
                 </tr>
                 <tr>
                     <td>परीक्षा कार्यक्रम का संबंध में</td>
-                    <td>07/09/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>07-Sep-2024</td>
                 </tr>
                 <tr>
                     <td>परीक्षा कार्यक्रम का संबंध में</td>
-                    <td>31/08/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>31-Aug-2024</td>
                 </tr>
                 <tr>
                     <td>सत्र 2024-25 के विषम सेमेस्टर की आयोजित होने वाली समस्त पाठ्यक्रमों की परीक्षा के संबंध में</td>
-                    <td>31/08/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>31-Aug-2024</td>
                 </tr>
                 <tr>
                     <td>शुद्धि-पत्र</td>
-                    <td>22/08/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>22-Aug-2024</td>
                 </tr>
                 <tr>
                     <td>वेब रजिस्ट्रेशन के संबंध में</td>
-                    <td>22/08/2024</td>
-                    <td><a href="#" class="btn" download>Download</a></td>
+                    <td>22-Aug-2024</td>
+                </tr>
+                <tr id="notfound" style=" display:none;">
+                    <td colspan="2" style="text-align: center; font-size: x-large;">Any Notice is not availabel</td>
                 </tr>
             </tbody>
         </table>

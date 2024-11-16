@@ -4,8 +4,6 @@ document.querySelectorAll('.dropdown-close').forEach(closeBtn => {
         checkbox.checked = false;
     });
 });
-
-// only one dropdown menu open at a time
 document.addEventListener('click', function (event) {
     const dropdowns = document.querySelectorAll('.dropdown-checkbox');
     dropdowns.forEach(dropdown => {
@@ -24,19 +22,6 @@ marquee.addEventListener("mouseover", function () {
 marquee.addEventListener("mouseout", function () {
     marquee.start();
 });
-
-
-
-let currentIndex = 0;
-function moveSlide(direction) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-setInterval(() => {
-    moveSlide(1);
-}, 5000);
 
 
 
@@ -86,7 +71,6 @@ window.addEventListener('resize', function () {
 
 
 
-
 function updateClock() {
     const now = new Date();
     let hours = now.getHours();
@@ -132,10 +116,33 @@ window.addEventListener('load', function () {
 });
 
 
-document.getElementById('backButton').addEventListener('click', function() {
+document.getElementById('backButton').addEventListener('click', function () {
     window.history.back();
-  });
-document.getElementById('forwardButton').addEventListener('click', function() {
+});
+document.getElementById('forwardButton').addEventListener('click', function () {
     window.history.forward();
-  });
-    
+});
+
+
+function filterTable(filterType) {
+    const searchName = document.getElementById("searchName").value.toLowerCase();
+    const table = document.getElementById("noticesTable");
+    const rows = table.getElementsByTagName("tr");
+    const error = document.getElementById("notfound");
+    let hasResults = false;
+    for (let i = 1; i < rows.length; i++) {
+        const nameCell = rows[i].getElementsByTagName("td")[0];
+        const dateCell = rows[i].getElementsByTagName("td")[1];
+        if (nameCell && dateCell) {
+            const nameText = nameCell.textContent || nameCell.innerText;
+            const dateText = dateCell.textContent || dateCell.innerText;
+            const shouldDisplay = nameText.toLowerCase().includes(searchName) || dateText.toLowerCase().includes(searchName);
+
+            rows[i].style.display = shouldDisplay ? "" : "none";
+            if (shouldDisplay) {
+                hasResults = true;
+            }
+        }
+    }
+    error.style.display = hasResults ? "none" : "";
+}
