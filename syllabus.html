@@ -13,48 +13,33 @@
     <style>
         table {
             width: 100% !important;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
             border: none !important;
+            margin-top: 20px;
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.303);
         }
 
-        table th {
+        th,
+        td {
+            border: 1px solid rgb(255, 255, 255) !important;
+        }
+
+        table td:nth-child(1) {
+            text-align: center !important;
             font-weight: bold;
-            border: 1px solid #ddd;
-            text-align: center;
         }
 
-        table td {
-            padding: 10px !important;
-            border: 1px solid #ddd;
+        table td:nth-child(2) {
             text-align: left !important;
         }
 
-        /* Row color styling */
-        tr:nth-child(odd) td {
-            background-color: #fdfdfd60 !important;
+        table td:nth-child(3) {
+            text-align: center !important;
+            font-size: large !important;
         }
 
-        tr:nth-child(even) td {
-            background-color: #f9c8c84c !important;
-        }
-
-        @media (max-width: 768px) {
-            table td {
-                font-size: 16px !important;
-                padding: 0px !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            table td {
-                min-width: 200px !important;
-                font-size: 14px !important;
-                padding: 2.5px 10px !important;
-            }
-
-            table td:nth-child(1) {
-                min-width: 50px !important;
+        @media (max-width:768px) {
+            table td:nth-child(3) {
+                font-size: small !important;
             }
         }
     </style>
@@ -513,7 +498,7 @@
             <div class="col-md-5" style="width: 100%;">
                 <h3>NEP UG Syllabus</h3>
                 <hr>
-                <p> <a href=".Circular/Office Management &amp; Secretarial Practice.pdf">Office Management &amp;
+                <p><a href=".Circular/Office Management &amp; Secretarial Practice.pdf">Office Management &amp;
                         Secretarial Practice</a> <a href=".Circular/Agriculture.pdf">Agriculture</a> <a
                         href=".Circular/Agriculture Marketing.pdf">Agriculture Marketing</a> <a
                         href=".Circular/B.Com.pdf">B.Com</a> <a href=".Circular/Botany.pdf">Botany</a> <a
@@ -530,7 +515,7 @@
                         href=".Circular/Fisheries.pdf">Fisheries</a> <a href=".Circular/Geography.pdf">Geography</a> <a
                         href=".Circular/BSc Geology14032024.pdf">Geology</a> <a
                         href=".Circular/Hindi UG_24.07.2024.pdf">Hindi</a> <a href=".Circular/History.pdf">History</a>
-                        <a href=".Circular/B.A Home science syllabus 24-07-2023 (ok.pdf">Home Science</a> <a
+                    <a href=".Circular/B.A Home science syllabus 24-07-2023 (ok.pdf">Home Science</a> <a
                         href=".Circular/Horticulture.pdf">Horticulture</a> <a
                         href=".Circular/Industrial Chemistry.pdf">Industrial Chemistry</a> <a
                         href=".Circular/Industrial Microbiology.pdf">Industrial Microbiology</a> <a
@@ -546,9 +531,11 @@
                         href=".Circular/Rural Banking.pdf">Rural Banking</a> <a href=".Circular/Seedtechnology.pdf">Seed
                         Technology</a> <a href=".Circular/Sanskrit.pdf">Sanskrit</a> <a
                         href=".Circular/Social Work.pdf">Social Work</a> <a href=".Circular/Sociology.pdf">Sociology</a>
-                        <a href=".Circular/Statistics.pdf">Statistics</a> <a href=".Circular/Urdu_21082023.pdf">Urdu</a> <a
+                    <a href=".Circular/Statistics.pdf">Statistics</a> <a href=".Circular/Urdu_21082023.pdf">Urdu</a> <a
                         href=".Circular/Village Industries.pdf">Village Industries</a> <a
-                        href=".Circular/Zoology.pdf">Zoology</a> Vocational Courses</p>
+                        href=".Circular/Zoology.pdf">Zoology</a></p>
+                <div class="clearfix"></div>
+                <h3>Vocational Courses</h3>
                 <hr>
                 <table>
                     <thead>
@@ -562,13 +549,16 @@
                         <tr>
                             <td>1.</td>
                             <td><a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">R.P English</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #a05926;" rowspan="4" align="center">
+                            <td style="width: 15%; font-weight: bold; color: #a05926;background-color: #f7dc6f49;"
+                                rowspan="4" align="center">
                                 Progressive</td>
                         </tr>
                         <tr>
                             <td>2.</td>
-                            <td><a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">Learning and Earning
-                                    with R.P</a></td>
+                            <td>
+                                <a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">Learning and Earning
+                                    with R.P</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>3.</td>
@@ -591,41 +581,41 @@
                             <td>6.</td>
                             <td><a href="../../Circular/6.pdf" target="_blank" rel="noopener">Medical lab technology</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>7.</td>
                             <td><a href="../../Circular/7.pdf" target="_blank" rel="noopener">Digital Marketing learning
                                     with earning</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>8.</td>
                             <td><a href="../../Circular/8.pdf" target="_blank" rel="noopener">चुनाव विश्लेषक</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>9.</td>
                             <td><a href="../../Circular/9.pdf" target="_blank" rel="noopener">टूर गाइड</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>10.</td>
                             <td><a href="../../Circular/10.pdf" target="_blank" rel="noopener">Air Quality Management
                                     (Pollution)</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>11.</td>
                             <td><a href="../../Circular/11.pdf" target="_blank" rel="noopener">Basic Computer in
                                     computer Application</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>12.</td>
                             <td><a href="../../Circular/12.pdf" target="_blank" rel="noopener">Skill development in
                                     Sociology</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>13.</td>
@@ -751,105 +741,105 @@
                             <td>33.</td>
                             <td><a href="../../Circular/33.pdf" target="_blank" rel="noopener">Integrated Food
                                     Processing Course</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>34.</td>
                             <td><a href="../../Circular/34.pdf" target="_blank" rel="noopener">Food Processing</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>35.</td>
                             <td><a href="../../Circular/35.pdf" target="_blank" rel="noopener">Vermicompost
                                     Technology</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>36.</td>
                             <td><a href="../../Circular/36.pdf" target="_blank" rel="noopener">Proficiency in Spoken
                                     English Programme</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>37.</td>
                             <td><a href="../../Circular/37.pdf" target="_blank" rel="noopener">Basic Computer Skill</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>38.</td>
                             <td><a href="../../Circular/38.pdf" target="_blank" rel="noopener">Chemistry of Volatile
                                     distillates used as fragrances for increase and Hawan Samagri</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>39.</td>
                             <td><a href="../../Circular/39.pdf" target="_blank" rel="noopener">Tally/ Accounting</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>40.</td>
                             <td><a href="../../Circular/40.pdf" target="_blank" rel="noopener">Computer Basic</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>41.</td>
                             <td><a href="../../Circular/41.pdf" target="_blank" rel="noopener">Digital Marketing</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>42.</td>
                             <td><a href="../../Circular/42.pdf" target="_blank" rel="noopener">HR Analytics</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>43.</td>
                             <td><a href="../../Circular/43.pdf" target="_blank" rel="noopener">Goods &amp; Service
                                     Tax</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>44.</td>
                             <td><a href="../../Circular/44.pdf" target="_blank" rel="noopener">E-Commerce</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>45.</td>
                             <td><a href="../../Circular/45.pdf" target="_blank" rel="noopener">संगीत गायन प्रवेशिका</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>46.</td>
                             <td><a href="../../Circular/46.pdf" target="_blank" rel="noopener">संगीत वादन (तबला)
                                     प्रवेशिका</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>47.</td>
                             <td><a href="../../Circular/47.pdf" target="_blank" rel="noopener">संगीत नृत्य प्रवेशिका</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>48.</td>
                             <td><a href="../../Circular/48.pdf" target="_blank" rel="noopener">संगीत वादन कौशियो
                                     प्रवेशिका</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>49.</td>
                             <td><a href="../../Circular/49.pdf" target="_blank" rel="noopener">Cutting and Sewing</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>50.</td>
                             <td><a href="../../Circular/50.pdf" target="_blank" rel="noopener">Data Entry &amp; Office
                                     Automation</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>51.</td>
@@ -861,37 +851,37 @@
                             <td>52.</td>
                             <td><a href="../../Circular/52.pdf" target="_blank" rel="noopener">Certificate in
                                     Apiculture</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>53.</td>
                             <td><a href="../../Circular/53.pdf" target="_blank" rel="noopener">Certificate in
                                     Pasciculture</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>54.</td>
                             <td><a href="../../Circular/54.pdf" target="_blank" rel="noopener">Certificate in
                                     Sericulture</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>55.</td>
                             <td><a href="../../Circular/55.pdf" target="_blank" rel="noopener">Electrical appliances
                                     Maintenance and Designing of basic lab equipments</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>56.</td>
                             <td><a href="../../Circular/56.pdf" target="_blank" rel="noopener">Detection of Adulterants
                                     in common food.</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>57.</td>
                             <td><a href="../../Circular/57.pdf" target="_blank" rel="noopener">Industrial Pollution and
                                     waste water.</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>58.</td>
@@ -903,266 +893,266 @@
                             <td>59.</td>
                             <td><a href="../../Circular/59.pdf" target="_blank" rel="noopener">Handling of Animal in
                                     Laboratory</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>60.</td>
                             <td><a href="../../Circular/60.pdf" target="_blank" rel="noopener">Banking and Finance</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>61.</td>
                             <td><a href="../../Circular/61.pdf" target="_blank" rel="noopener">Skilled Beekeeper</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>62.</td>
                             <td><a href="../../Circular/62.pdf" target="_blank" rel="noopener">Pearl culture
                                     Technician</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>63.</td>
                             <td><a href="../../Circular/63.pdf" target="_blank" rel="noopener">रेडिओ के लिए लेखन एवं
                                     प्रस्तुतिकरण</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>64.</td>
                             <td><a href="../../Circular/64.pdf" target="_blank" rel="noopener">कंप्यूटर, हिंदी मासिक
                                     प्रयोजन एवं इंटरनेट के लिए सृजनात्मक लेखन</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>65.</td>
                             <td><a href="../../Circular/65.pdf" target="_blank" rel="noopener">हिंदी साहित्य के समकालीन
                                     विमर्श एवं सृजनात्मक लेखन (महिलाओं के लिए सृजनात्मक लेखन)</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>66.</td>
                             <td><a href="../../Circular/66.pdf" target="_blank" rel="noopener">Tourism and heritage
                                     management</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>67.</td>
                             <td><a href="../../Circular/67.pdf" target="_blank" rel="noopener">Music-Literature ,Arts
                                     ,Science</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>68.</td>
                             <td><a href="../../Circular/68.pdf" target="_blank" rel="noopener">Sustainable Agriculture
                                     and Organic Farming</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>69.</td>
                             <td><a href="../../Circular/69.pdf" target="_blank" rel="noopener">Laboratory Water Quality
                                     Attendant</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>70.</td>
                             <td><a href="../../Circular/70.pdf" target="_blank" rel="noopener">Computational Physics</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>71.</td>
                             <td><a href="../../Circular/71.pdf" target="_blank" rel="noopener">Radiation Physics-:
                                     Applications and Safety</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>72.</td>
                             <td><a href="../../Circular/72.pdf" target="_blank" rel="noopener">Basic Instrumentation
                                     Physics</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>73.</td>
                             <td><a href="../../Circular/73.pdf" target="_blank" rel="noopener">Health and Fitness
                                     Trainer</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>74.</td>
                             <td><a href="../../Circular/74.pdf" target="_blank" rel="noopener">Creative Painting</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>75.</td>
                             <td><a href="../../Circular/75.pdf" target="_blank" rel="noopener">Creative Photography</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>76.</td>
                             <td><a href="../../Circular/76.pdf" target="_blank" rel="noopener">Designing Art and
                                     Craft</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>77.</td>
                             <td><a href="../../Circular/77.pdf" target="_blank" rel="noopener">Fabric Painting</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>78.</td>
                             <td><a href="../../Circular/78.pdf" target="_blank" rel="noopener">Flower Painting</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>79.</td>
                             <td><a href="../../Circular/79.pdf" target="_blank" rel="noopener">Landscape Painting</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>80.</td>
                             <td><a href="../../Circular/80.pdf" target="_blank" rel="noopener">Mural Art</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>81.</td>
                             <td><a href="../../Circular/81.pdf" target="_blank" rel="noopener">Portrait Painting</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>82.</td>
                             <td><a href="../../Circular/82.pdf" target="_blank" rel="noopener">Wall Painting</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>83.</td>
                             <td><a href="../../Circular/83.pdf" target="_blank" rel="noopener">Wall Painting and Mural
                                     Art</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>84.</td>
                             <td><a href="../../Circular/84.pdf" target="_blank" rel="noopener">Mushroom Cultivation</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>85.</td>
                             <td><a href="../../Circular/85.pdf" target="_blank" rel="noopener">लेख-वार्ता और
                                     संस्कृति</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>86.</td>
                             <td><a href="../../Circular/86.pdf" target="_blank" rel="noopener">पटकथा लेखन</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>87.</td>
                             <td><a href="../../Circular/87.pdf" target="_blank" rel="noopener">Comprehensive Programme
                                     on Stock Market</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>88.</td>
                             <td><a href="../../Circular/88.pdf" target="_blank" rel="noopener">Fundamentals of
                                     Insurance</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>89.</td>
                             <td><a href="../../Circular/89.pdf" target="_blank" rel="noopener">Fundamentals of Digital
                                     Marketing</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>90.</td>
                             <td><a href="../../Circular/90.pdf" target="_blank" rel="noopener">Certificate in GST</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>91.</td>
                             <td><a href="../../Circular/91.pdf" target="_blank" rel="noopener">Retail Management</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>92.</td>
                             <td><a href="../../Circular/92.pdf" target="_blank" rel="noopener">Introduction of
                                     hospitality and Tourism Industry</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>93.</td>
                             <td><a href="../../Circular/93.pdf" target="_blank" rel="noopener">Floriculture &amp;
                                     Landscaping, Planning, Designing and Operation Management</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>94.</td>
                             <td><a href="../../Circular/94.pdf" target="_blank" rel="noopener">Mushroom Spawn Production
                                     and Cultivation</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>95.</td>
                             <td><a href="../../Circular/95.pdf" target="_blank" rel="noopener">Modern Techniques For
                                     Plant propagation</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>96.</td>
                             <td><a href="../../Circular/96.pdf" target="_blank" rel="noopener">Integrated Plant
                                     Protection</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>97.</td>
                             <td><a href="../../Circular/97.pdf" target="_blank" rel="noopener">Cultivation &amp;
                                     Utilization of Medicinal &amp; Aromatic Plants</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>98.</td>
                             <td><a href="../../Circular/98.pdf" target="_blank" rel="noopener">Certificate in yoga</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>99.</td>
                             <td><a href="../../Circular/99.pdf" target="_blank" rel="noopener">Certificate in ITES-BPO,
                                     Sorft Skills and Communicate English</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>100.</td>
                             <td><a href="../../Circular/100.pdf" target="_blank" rel="noopener">Pathology Techniques</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>101.</td>
                             <td><a href="../../Circular/101.pdf" target="_blank" rel="noopener">Laboratory Skills&amp;
                                     Standardization Methods</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>102.</td>
                             <td><a href="../../Circular/102.pdf" target="_blank" rel="noopener">Basic of Laboratory
                                     Control</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>103.</td>
                             <td><a href="../../Circular/103A.pdf" target="_blank" rel="noopener">Fragrance &amp; Flavour
                                     Development</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>104.</td>
@@ -1196,79 +1186,79 @@
                             <td>109.</td>
                             <td><a href="../../Circular/109.pdf" target="_blank" rel="noopener">Descriptive Statistics
                                     Using Excel &amp; R</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>110.</td>
                             <td><a href="../../Circular/110.pdf" target="_blank" rel="noopener">Accounts &amp; Tally</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>111.</td>
                             <td><a href="../../Circular/111.pdf" target="_blank" rel="noopener">Good &amp; Service Tax
                                     (GST)</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>112.</td>
                             <td><a href="../../Circular/112.pdf" target="_blank" rel="noopener">MS Office &amp;
                                     Internet</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>113.</td>
                             <td><a href="../../Circular/113.pdf" target="_blank" rel="noopener">Export Import
                                     Documentation</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>114.</td>
                             <td><a href="../../Circular/114.pdf" target="_blank" rel="noopener">Guidance &amp;
                                     Counseling</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>115.</td>
                             <td><a href="../../Circular/115A.pdf" target="_blank" rel="noopener">General Sericulture</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>116.</td>
                             <td><a href="../../Circular/116A.pdf" target="_blank" rel="noopener">MS Office &amp;
                                     Networking</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>117.</td>
                             <td><a href="../../Circular/117A.pdf" target="_blank" rel="noopener">Organic Farming</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>118.</td>
                             <td><a href="../../Circular/118A.pdf" target="_blank" rel="noopener">Study of the Artisan
                                     Skills of Agra</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>119.</td>
                             <td><a href="../../Circular/119A.pdf" target="_blank" rel="noopener">Teaching Skills
                                     Development</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>120.</td>
                             <td><a href="../../Circular/120A.pdf" target="_blank" rel="noopener">Basics of Electrician
                                     Trade</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>121.</td>
                             <td><a href="../../Circular/121.pdf" target="_blank" rel="noopener">Basics of Electronics
                                     Mechanic Trade</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>122.</td>
@@ -1280,25 +1270,25 @@
                             <td>123.</td>
                             <td><a href="../../Circular/123.pdf" target="_blank" rel="noopener">Basic of computer and
                                     Information Technology</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>124.</td>
                             <td><a href="../../Circular/124A.pdf" target="_blank" rel="noopener">Fashion
                                     Technology-General Knowledge</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>125.</td>
                             <td><a href="../../Circular/125.pdf" target="_blank" rel="noopener">Electronics Components
                                     and Devices</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>126.</td>
                             <td><a href="../../Circular/126A.pdf" target="_blank" rel="noopener">Industrial Safety</a>
                             </td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>127.</td>
@@ -1321,7 +1311,7 @@
                             <td>130.</td>
                             <td><a href="../../Circular/130.pdf" target="_blank" rel="noopener">Plant Nursery
                                     Management</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>131.</td>
@@ -1345,21 +1335,104 @@
                             <td>134.</td>
                             <td><a href="../../Circular/134.pdf" target="_blank" rel="noopener">Medical Plants of local
                                     areas and their application</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>135.</td>
                             <td><a href="../../Circular/135.pdf" target="_blank" rel="noopener">Techniques in
                                     biofertilizers production</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Independent</td>
+                            <td>Independent</td>
                         </tr>
                         <tr>
                             <td>136.</td>
                             <td><a href="../../Circular/136.pdf" target="_blank" rel="noopener">C-Programming</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #474877;" align="center">Progressive</td>
+                            <td>Progressive</td>
                         </tr>
-                    </thead>
+                        </thead>
                 </table>
+                <div class="clearfix"></div>
+                <h3>NON NEP UG SYLLABUS</h3>
+                <hr>
+                <p><a class="btn btn-link" href=".Circular/Syllabus MSC Environment Science.pdf" target="_blank"
+                        rel="noopener">MSC Environment Science</a> <a class="btn btn-link"
+                        href=".Circular/Music Tabla Syllabus.pdf" target="_blank" rel="noopener">M.A.(Music Instrumental
+                        Tabla)</a> <a class="btn btn-link" href=".Circular/M.A Psychology.pdf" target="_blank"
+                        rel="noopener">M.A Psychology</a> <a class="btn btn-link"
+                        href=".Circular/M.A. (HINDI) SYLLABUS.pdf" target="_blank" rel="noopener">M.A. (HINDI) </a> <a
+                        class="btn btn-link" href=".Circular/M.A. _English_.pdf" target="_blank" rel="noopener">M.A.
+                        English</a> <a class="btn btn-link" href=".Circular/SYLABUS MA Economics New.pdf"
+                        target="_blank" rel="noopener">M.A. ECONOMICS</a> <a class="btn btn-link"
+                        href=".Circular/M.A. EDUCATION.pdf" target="_blank" rel="noopener">M.A. EDUCATION</a> <a
+                        class="btn btn-link" href=".Circular/M.A. POL SC SYLLABUS FOR 2023-2024 (ok).pdf"
+                        target="_blank" rel="noopener">MA (POLITICAL SCIENCE)</a> <a class="btn btn-link"
+                        href=".Circular/MA(GEOGRAPHY).pdf" target="_blank" rel="noopener">MA(GEOGRAPHY)</a> <a
+                        class="btn btn-link" href=".Circular/MA(SOCIOLOGY).pdf" target="_blank"
+                        rel="noopener">MA(SOCIOLOGY)</a> <a class="btn btn-link"
+                        href=".Circular/History Syllabus_14032024_1.pdf" target="_blank" rel="noopener">M.A. ( HISTORY
+                        )</a> <a class="btn btn-link" href=".Circular/M A DEFENCE &amp;STRATEGIC STUDIES.pdf"
+                        target="_blank" rel="noopener">M.A. DEFENCE &amp; STRATEGIC STUDIES</a> <a class="btn btn-link"
+                        href=".Circular/M.A. Home Science syllabus new updated (ok.pdf" target="_blank"
+                        rel="noopener">M.A. Home Science</a> <a class="btn btn-link"
+                        href=".Circular/ma_sanskrit_new.pdf" target="_blank" rel="noopener">M.A. sanskrit</a> <a
+                        class="btn btn-link" href=".Circular/Msc_Geology_PG.pdf" target="_blank" rel="noopener">M.Sc.
+                        Geology</a> <a class="btn btn-link" href=".Circular/MA DRAWING AND PAINTING.pdf" target="_blank"
+                        rel="noopener">M.A. DRAWING AND PAINTING</a> <a class="btn btn-link"
+                        href=".Circular/M.Sc. Biotechnology.pdf" target="_blank" rel="noopener">M.Sc. Biotechnology</a>
+                    <a class="btn btn-link" href=".Circular/M.Sc. Computer Science.pdf" target="_blank"
+                        rel="noopener">M.Sc. Computer Science</a> <a class="btn btn-link"
+                        href=".Circular/M.Sc. Forestry Syllabus.pdf" target="_blank" rel="noopener">M.Sc. Forestry </a>
+                    <a class="btn btn-link" href=".Circular/M.Sc. Microbiology.pdf" target="_blank" rel="noopener">M.Sc.
+                        Microbiology</a> <a class="btn btn-link" href=".Circular/MSC(Zoology) .pdf" target="_blank"
+                        rel="noopener">MSC(Zoology) </a> <a class="btn btn-link"
+                        href=".Circular/MSc_Botany_Syllabus_RMPU.pdf" target="_blank" rel="noopener">MSc Botany</a> <a
+                        class="btn btn-link" href=".Circular/M.Sc CHEMISTRY syallabus.pdf" target="_blank"
+                        rel="noopener">MSc Chemistry</a> <a class="btn btn-link"
+                        href=".Circular/MSc agronomy syllabus Rbs .pdf" target="_blank" rel="noopener">MSc agronomy </a>
+                    <a class="btn btn-link" href=".Circular/board of studies physics.pdf" target="_blank"
+                        rel="noopener">MSc Physics </a> <a class="btn btn-link"
+                        href=".Circular/Bechlor of Research M.Sc. , P.G.D.R. Mathematics.pdf" target="_blank"
+                        rel="noopener">M.Sc. Mathematics </a> <a class="btn btn-link"
+                        href=".Circular/M.COM syllabus 2022 nep based 14032024.pdf" target="_blank" rel="noopener">M.COM
+                        nep based </a> <a class="btn btn-link" href=".Circular/Med syllabaus.pdf" target="_blank"
+                        rel="noopener">Med</a> <a class="btn btn-link" href=".Circular/Industrial Microbiology.pdf"
+                        target="_blank" rel="noopener">Industrial Microbiology</a> <a class="btn btn-link"
+                        href=".Circular/LLM.pdf" target="_blank" rel="noopener">LLM</a> <a class="btn btn-link"
+                        href=".Circular/LLM 2 Year Course.pdf" target="_blank" rel="noopener">LLM 2 Year</a></p>
+                <div class="clearfix"></div>
+                <h3>NON NEP PG SYLLABUS</h3>
+                <hr>
+                <p><a class="btn btn-link" href=".Circular/M. Sc. (Ag.) in AGRICULTUAL ECONOMICS.pdf" target="_blank"
+                        rel="noopener">M. Sc. (Ag.) in AGRICULTUAL ECONOMICS</a> <a class="btn btn-link"
+                        href=".Circular/M.Sc (Ag) Agri. Extension.pdf" target="_blank" rel="noopener">M.Sc (Ag) Agri.
+                        Extension</a> <a class="btn btn-link"
+                        href=".Circular/M.Sc. (Ag.) Soil Science and Agricultural.pdf" target="_blank"
+                        rel="noopener">M.Sc. (Ag.) Soil Science and Agricultural</a> <a class="btn btn-link"
+                        href=".Circular/M.Sc. _Ag._ ANIMAL HUSBANDRY AND DAIRYING _DAIRY SCIENCE_.pdf" target="_blank"
+                        rel="noopener">M.Sc. Ag. ANIMAL HUSBANDRY AND DAIRYING DAIRY SCIENCE</a> <a class="btn btn-link"
+                        href=".Circular/M.Sc.(Ag.)Horticulculture.pdf" target="_blank"
+                        rel="noopener">M.Sc.(Ag.)Horticulculture</a> <a class="btn btn-link"
+                        href=".Circular/MSC-AG-ANIMAL SCIENCE SYLLABUS Document _2_.pdf" target="_blank"
+                        rel="noopener">MSC AG ANIMAL SCIENCE</a></p>
+                <div class="clearfix"></div>
+                <h3>Other Courses </h3>
+                <hr>
+                <p><a class="btn btn-link" href="Circular/BALLB 5 YEAR COURSE.pdf" target="_blank" rel="noopener">BALLB
+                        5 YEAR</a> <a class="btn btn-link" href="Circular/Advance Diploma in Health Care.pdf"
+                        target="_blank" rel="noopener">Advance Diploma in Health Care</a> <a class="btn btn-link"
+                        href="Circular/Home science syllabus.pdf" target="_blank" rel="noopener">Home science</a> <a
+                        class="btn btn-link" href="Circular/LLB.pdf" target="_blank" rel="noopener">LLB</a> <a
+                        class="btn btn-link" href="Circular/LLB 3 YEAR COURSE.pdf" target="_blank" rel="noopener">LLB 3
+                        YEAR</a> <a class="btn btn-link" href="Circular/PGDBM.pdf" target="_blank"
+                        rel="noopener">PGDBM</a> <a class="btn btn-link" href="Circular/PGDCA.pdf" target="_blank"
+                        rel="noopener">PGDCA</a> <a class="btn btn-link" href="Circular/DLIS.pdf" target="_blank"
+                        rel="noopener">D.L.I.S.</a></p>
+                <div class="clearfix"></div>
+                <h3>Rules as per NEP 2020</h3>
+                <hr>
+                <p><a style="font-size: 14px;"
+                        href="Attachment/अधिसूचना, राष्ट्रीय शिक्षा नीति 2020 प्रकोष्ठ की बैठक के संबंध में.pdf"
+                        target="_blank" rel="noopener">Rules as per NEP 2020/अधिसूचना, राष्ट्रीय शिक्षा नीति 2020</a>
+                </p>
             </div>
         </div>
     </div>
