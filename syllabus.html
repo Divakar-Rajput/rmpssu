@@ -15,7 +15,8 @@
             width: 100% !important;
             border: none !important;
             margin-top: 20px;
-            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.303);
+            margin-bottom: 40px;
+            /* box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.303); */
         }
 
         th,
@@ -494,9 +495,16 @@
         <h1>SYLLABUS</h1>
     </div>
     <div class="container">
+        <div class="searchfilters">
+            <span>Search Courses here</span>
+            <div class="inputfilters">
+                <input type="text" id="searchCourse" placeholder="Search Courses here...." oninput="filterCourses()">
+            </div>
+        </div>
+        <br>
         <div class="row">
             <div class="col-md-5" style="width: 100%;">
-                <h3>NEP UG Syllabus</h3>
+                <h3 id="result">NEP UG Syllabus</h3>
                 <hr>
                 <p><a href=".Circular/Office Management &amp; Secretarial Practice.pdf">Office Management &amp;
                         Secretarial Practice</a> <a href=".Circular/Agriculture.pdf">Agriculture</a> <a
@@ -533,8 +541,8 @@
                         href=".Circular/Social Work.pdf">Social Work</a> <a href=".Circular/Sociology.pdf">Sociology</a>
                     <a href=".Circular/Statistics.pdf">Statistics</a> <a href=".Circular/Urdu_21082023.pdf">Urdu</a> <a
                         href=".Circular/Village Industries.pdf">Village Industries</a> <a
-                        href=".Circular/Zoology.pdf">Zoology</a></p>
-                <div class="clearfix"></div>
+                        href=".Circular/Zoology.pdf">Zoology</a>
+                </p>
                 <h3>Vocational Courses</h3>
                 <hr>
                 <table>
@@ -549,9 +557,7 @@
                         <tr>
                             <td>1.</td>
                             <td><a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">R.P English</a></td>
-                            <td style="width: 15%; font-weight: bold; color: #a05926;background-color: #f7dc6f49;"
-                                rowspan="4" align="center">
-                                Progressive</td>
+                            <td>Progressive</td>
                         </tr>
                         <tr>
                             <td>2.</td>
@@ -559,16 +565,19 @@
                                 <a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">Learning and Earning
                                     with R.P</a>
                             </td>
+                            <td>Progressive</td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td><a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">Skill of Speaking</a>
                             </td>
+                            <td>Progressive</td>
                         </tr>
                         <tr>
                             <td>4.</td>
                             <td><a href="../../Circular/1-4.pdf" target="_blank" rel="noopener">Speaking with Fun</a>
                             </td>
+                            <td>Progressive</td>
                         </tr>
                         <tr>
                             <td>5.</td>
@@ -1350,8 +1359,31 @@
                         </tr>
                         </thead>
                 </table>
-                <div class="clearfix"></div>
                 <h3>NON NEP UG SYLLABUS</h3>
+                <hr>
+                <p><a class="btn btn-link" href="Circular/B.ed_Syllabusnew.pdf" target="_blank" rel="noopener">B.Ed</a>
+                    <a class="btn btn-link" href="Circular/B.Voc. Information Technology_03102023.pdf" target="_blank"
+                        rel="noopener">B Voc Information Technology</a> <a class="btn btn-link"
+                        href="Circular/B. Com Vocational Syllabus Semester Wise.pdf" target="_blank" rel="noopener">B.
+                        Com Vocational</a> <a class="btn btn-link" href="Circular/B. Sc. (Hons) Forestry.pdf"
+                        target="_blank" rel="noopener">B. Sc. (Hons) Forestry</a> <a class="btn btn-link"
+                        href="Circular/B.P.Ed.pdf" target="_blank" rel="noopener">B.P.Ed</a> <a class="btn btn-link"
+                        href="Circular/B.SC. (INDUSTRIAL CHEMISTRY).pdf" target="_blank" rel="noopener">B.SC.
+                        (INDUSTRIAL CHEMISTRY)</a> <a class="btn btn-link"
+                        href="Circular/B.Sc. Biotechnology syllabus 2022.pdf" target="_blank" rel="noopener">B.Sc.
+                        Biotechnology</a> <a class="btn btn-link"
+                        href="Circular/B.Sc.(Voc.) in BIOTECHNOLOGY_22092023.pdf" target="_blank"
+                        rel="noopener">B.Sc.(Voc.) in Biotechnology</a> <a class="btn btn-link"
+                        href="Circular/B.Sc (Voc) in Computer Application.pdf" target="_blank" rel="noopener">B.Sc (Voc)
+                        in Computer Application</a> <a class="btn btn-link" href="Circular/BBA_SYLLABUS -NEW.pdf"
+                        target="_blank" rel="noopener">BBA_SYLLABUS -NEW</a> <a class="btn btn-link"
+                        href="Circular/BCA Syllabus .pdf" target="_blank" rel="noopener">BCA</a> <a class="btn btn-link"
+                        href="Circular/BSC HOME SCIENCE 2017 SYLLABUS _1_.pdf" target="_blank" rel="noopener">BSC HOME
+                        SCIENCE 2017 SYLLABUS _1_</a> <a class="btn btn-link"
+                        href="Circular/BPES-Syllabus-&amp;-PO-CO-Merge_21082023.pdf" target="_blank"
+                        rel="noopener">B.P.E.S.</a>
+                </p>
+                <h3>NEP PG SYLLABUS</h3>
                 <hr>
                 <p><a class="btn btn-link" href=".Circular/Syllabus MSC Environment Science.pdf" target="_blank"
                         rel="noopener">MSC Environment Science</a> <a class="btn btn-link"
@@ -1397,8 +1429,8 @@
                         rel="noopener">Med</a> <a class="btn btn-link" href=".Circular/Industrial Microbiology.pdf"
                         target="_blank" rel="noopener">Industrial Microbiology</a> <a class="btn btn-link"
                         href=".Circular/LLM.pdf" target="_blank" rel="noopener">LLM</a> <a class="btn btn-link"
-                        href=".Circular/LLM 2 Year Course.pdf" target="_blank" rel="noopener">LLM 2 Year</a></p>
-                <div class="clearfix"></div>
+                        href=".Circular/LLM 2 Year Course.pdf" target="_blank" rel="noopener">LLM 2 Year</a>
+                </p>
                 <h3>NON NEP PG SYLLABUS</h3>
                 <hr>
                 <p><a class="btn btn-link" href=".Circular/M. Sc. (Ag.) in AGRICULTUAL ECONOMICS.pdf" target="_blank"
@@ -1413,8 +1445,7 @@
                         rel="noopener">M.Sc.(Ag.)Horticulculture</a> <a class="btn btn-link"
                         href=".Circular/MSC-AG-ANIMAL SCIENCE SYLLABUS Document _2_.pdf" target="_blank"
                         rel="noopener">MSC AG ANIMAL SCIENCE</a></p>
-                <div class="clearfix"></div>
-                <h3>Other Courses </h3>
+                <h3>Other Courses</h3>
                 <hr>
                 <p><a class="btn btn-link" href="Circular/BALLB 5 YEAR COURSE.pdf" target="_blank" rel="noopener">BALLB
                         5 YEAR</a> <a class="btn btn-link" href="Circular/Advance Diploma in Health Care.pdf"
@@ -1426,20 +1457,19 @@
                         rel="noopener">PGDBM</a> <a class="btn btn-link" href="Circular/PGDCA.pdf" target="_blank"
                         rel="noopener">PGDCA</a> <a class="btn btn-link" href="Circular/DLIS.pdf" target="_blank"
                         rel="noopener">D.L.I.S.</a></p>
-                <div class="clearfix"></div>
                 <h3>Rules as per NEP 2020</h3>
                 <hr>
                 <p><a style="font-size: 14px;"
                         href="Attachment/अधिसूचना, राष्ट्रीय शिक्षा नीति 2020 प्रकोष्ठ की बैठक के संबंध में.pdf"
                         target="_blank" rel="noopener">Rules as per NEP 2020/अधिसूचना, राष्ट्रीय शिक्षा नीति 2020</a>
                 </p>
+                <h2 id="notmatch" style="display: none;">Search result is not found</h2>
             </div>
         </div>
     </div>
 
 
-    <!-- footer start-->
-    <div class="clearfix"></div>
+    <!-- footer start -->
     <footer>
         <div class="footer-container">
             <div class="footer-section about">
@@ -1506,6 +1536,58 @@
         <p>Design by <a href="#">DIVAKAR RAJPUT</a> BCA AT RMPSSU</p>
     </div>
     <!-- bottom footer end -->
+    <script>
+        function filterCourses() {
+            const searchCourse = document.getElementById("searchCourse").value.toLowerCase();
+            const CourseName = document.querySelectorAll(".col-md-5 p a");
+            const table = document.getElementsByTagName("table")[0];
+            const tablecourse = document.getElementsByTagName("tr");
+            const notmatch = document.getElementById('notmatch');
+            let hasResults = false;
+            let errorResults2 = false;
+
+            const headings = document.querySelectorAll('.col-md-5 h3');
+            const hrs = document.querySelectorAll('.col-md-5 hr');
+            headings.forEach(h3 => h3.style.display = 'none');
+            hrs.forEach(hr => hr.style.display = 'none');
+
+            for (let i = 1; i < tablecourse.length; i++) {
+                const td = tablecourse[i].getElementsByTagName('td')[1];
+                if (td) {
+                    const td_data = td.textContent || td.innerText;
+                    const display_td = td_data.toLowerCase().includes(searchCourse);
+                    tablecourse[i].style.display = display_td ? "" : "none";
+                    if (display_td) {
+                        const parent = tablecourse[i].parentElement?.parentElement;
+                        const sibling = parent.previousElementSibling?.previousElementSibling;
+                        const hrsibling = parent.previousElementSibling;
+                        sibling.style.display = "";
+                        hrsibling.style.display = "";
+                        hasResults = true;
+                    }
+                }
+
+            }
+            table.style.display = hasResults ? "" : "none";
+            for (let i = 0; i < CourseName.length; i++) {
+                const selectcourse = CourseName[i];
+                if (CourseName) {
+                    const courseCell = selectcourse.textContent || selectcourse.innerText;
+                    const displaycourse = courseCell.toLowerCase().includes(searchCourse);
+                    CourseName[i].style.display = displaycourse ? "" : "none";
+                    if (displaycourse) {
+                        const parent = CourseName[i].parentElement;
+                        const sibling = parent.previousElementSibling?.previousElementSibling;
+                        const hrsibling = parent.previousElementSibling;
+                        sibling.style.display = "";
+                        hrsibling.style.display = "";
+                        errorResults2 = true;
+                    }
+                }
+            }
+            notmatch.style.display = hasResults || errorResults2 ? "none" : "";
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 

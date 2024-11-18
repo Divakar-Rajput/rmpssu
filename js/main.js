@@ -116,12 +116,12 @@ window.addEventListener('load', function () {
 });
 
 
-document.getElementById('backButton').addEventListener('click', function () {
-    window.history.back();
-});
-document.getElementById('forwardButton').addEventListener('click', function () {
-    window.history.forward();
-});
+// document.getElementById('backButton').addEventListener('click', function () {
+//     window.history.back();
+// });
+// document.getElementById('forwardButton').addEventListener('click', function () {
+//     window.history.forward();
+// });
 
 
 function filterTable(filterType) {
@@ -146,3 +146,27 @@ function filterTable(filterType) {
     }
     error.style.display = hasResults ? "none" : "";
 }
+
+function newmarquee() {
+    const news = document.getElementById("newsMarquee");
+    news.innerHTML = `
+    <a href="/Attachments/Campus Admission Notice 2024-25.pdf">
+        विश्वविद्यालय परिसर कैंपस सत्र 2024-25 प्रवेश प्रारंभ के संबंध में !&nbsp;
+    </a>
+    &nbsp;|&nbsp;
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSciKSf5vJaE6pBZg-pQ-3DtV452O8GSdFT4A7luvSTNnmYXaQ/viewform?pli=1&amp;usp=pp_url">
+        Samarth-3-A-Affiliated College ERP Link ! &nbsp;
+    </a>
+    <img src="img/new.gif" class="newgif">
+    &nbsp;|&nbsp;
+    <a href="/Attachments/Campus Admission Notice 2024-25.pdf">
+        महाविद्यालयों से वांछित सूचनाएं अविलम्ब उपलब्ध कराने में ! &nbsp;
+    </a>
+    <img src="img/new.gif" class="newgif">
+    &nbsp;|&nbsp;
+    <a href="/Attachments/Campus Admission Notice 2024-25.pdf">
+       स्वामी विवेकानन्द युवा सशक्तिकरण योजनान्तर्गत विकसित डिजी शक्ति पोर्टल पर सत्र 2022-23 एवं 2023-24 के अन्तिम वर्ष के छात्र-छात्राओं की अपलोडिंग बन्द किये जाने के सम्बन्ध में !
+    </a>
+    <img src="img/new.gif" class="newgif">`;
+}
+newmarquee();

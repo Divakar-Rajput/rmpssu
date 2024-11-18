@@ -1164,10 +1164,17 @@ hr {
 .col-md-5 p {
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 40px;
 }
 .col-md-5 h3 {
   text-align: center;
   color: var(--text-color);
+}
+.col-md-5 h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(168, 167, 167);
+  margin-bottom: 60px;
 }
 .col-md-5 p a {
   display: inline-block;
