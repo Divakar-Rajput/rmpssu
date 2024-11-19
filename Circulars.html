@@ -461,17 +461,18 @@
 
     <!-- notice table start -->
     <div class="container">
-        <div class="historybtn">
-            <span id="backButton" class="hisbtn">⬅️ Back</span>
-            <span id="forwardButton" class="hisbtn">Next ➡️</span>
-        </div>
         <h1 style="text-align: center; color: #8e0000;">Circulars</h1>
-        <div class="searchfilters">
+        <div class="wrap">
             <span>Search Circulars here by date & name</span>
-            <h6>(Note: Enter month name, year or day to find quickly)</h6>
-            <div class="inputfilters">
-                <input type="text" id="searchName" placeholder="Search here to find notices by Date & Name...."
-                    oninput="filterTable('name')">
+            <h6>Note: Enter month name (Jan) or year to find quickly</h6>
+            <div class="search">
+                <input type="text"  oninput="filterTable('name')" id="searchName" class="searchTerm"
+                    placeholder="Search here to find circulars by Date & Name....">
+                <button type="submit" class="searchButton">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
             </div>
         </div>
         <br>

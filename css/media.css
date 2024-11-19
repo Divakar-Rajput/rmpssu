@@ -486,46 +486,37 @@
 
 /* For mobile devices (max width 768px) */
 @media (max-width: 768px) {
-  .searchfilters {
-    width: 70%; /* Increase width for smaller devices */
+  .wrap {
+    width: 70%; /* Almost full width */
   }
 
-  .inputfilters input {
-    font-size: medium; /* Further reduce font size */
-    padding: 7px 0px; /* Adjust padding for smaller input */
-    padding-left: 10px; /* Adjust left padding */
+  .searchTerm {
+    font-size:large;
   }
-  .searchfilters span {
-    font-size: medium;
+  .wrap span {
+    font-size: large;
+    margin-bottom: 20px;
   }
-  .searchfilters h6 {
-    font-size: x-small;
-  }
-  .inputfilters input::placeholder{
-    font-size: medium;
+  .searchButton {
+   height: 45.8px;
   }
 }
 
 /* For very small devices (max width 480px) */
 @media (max-width: 480px) {
-  .searchfilters {
+  .wrap {
     width: 90%; /* Almost full width */
   }
 
-  .inputfilters input {
-    font-size: small; /* Small font for very small devices */
-    padding: 10px 0px; /* Compact padding */
-    padding-left: 8px; /* Adjust padding */
+  .searchTerm {
+    font-size:small;
   }
-  .searchfilters span {
+  .wrap span {
     font-size: large;
     margin-bottom: 20px;
   }
-  .searchfilters h6 {
-    font-size: xx-small;
-  }
-  .inputfilters input::placeholder{
-    font-size: small;
+  .searchButton {
+   height: 46px;
   }
 }
 @media (max-width: 768px) {

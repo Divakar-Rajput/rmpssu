@@ -495,12 +495,17 @@
         <h1>SYLLABUS</h1>
     </div>
     <div class="container">
-        <div class="searchfilters">
-            <span>Search Courses here</span>
-            <div class="inputfilters">
-                <input type="text" id="searchCourse" placeholder="Search Courses here...." oninput="filterCourses()">
+        <div class="wrap">
+            <span>Search Courses Here</span>
+            <div class="search">
+               <input type="text" oninput="filterCourses()" id="searchCourse" class="searchTerm" placeholder="Searche Courses Here....">
+               <button type="submit" class="searchButton">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+              </button>
             </div>
-        </div>
+         </div>
         <br>
         <div class="row">
             <div class="col-md-5" style="width: 100%;">

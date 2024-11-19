@@ -116,14 +116,6 @@ window.addEventListener('load', function () {
 });
 
 
-// document.getElementById('backButton').addEventListener('click', function () {
-//     window.history.back();
-// });
-// document.getElementById('forwardButton').addEventListener('click', function () {
-//     window.history.forward();
-// });
-
-
 function filterTable(filterType) {
     const searchName = document.getElementById("searchName").value.toLowerCase();
     const table = document.getElementById("noticesTable");
