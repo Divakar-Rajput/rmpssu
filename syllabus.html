@@ -498,14 +498,15 @@
         <div class="wrap">
             <span>Search Courses Here</span>
             <div class="search">
-               <input type="text" oninput="filterCourses()" id="searchCourse" class="searchTerm" placeholder="Searche Courses Here....">
-               <button type="submit" class="searchButton">
-                <span class="material-symbols-outlined">
-                    search
+                <input type="text" oninput="filterCourses()" id="searchCourse" class="searchTerm"
+                    placeholder="Searche Courses Here....">
+                <button type="submit" class="searchButton">
+                    <span class="material-symbols-outlined">
+                        search
                     </span>
-              </button>
+                </button>
             </div>
-         </div>
+        </div>
         <br>
         <div class="row">
             <div class="col-md-5" style="width: 100%;">
@@ -1569,6 +1570,10 @@
                         sibling.style.display = "";
                         hrsibling.style.display = "";
                         hasResults = true;
+                        td.innerHTML = highlightMatch(td_data, searchCourse);
+                    }
+                    else {
+                        td.innerHTML = td_data;
                     }
                 }
 
@@ -1591,6 +1596,11 @@
                 }
             }
             notmatch.style.display = hasResults || errorResults2 ? "none" : "";
+        }
+        function highlightMatch(text, searchCourse) {
+            if (!searchCourse) return text;
+            const regex = new RegExp(`(${searchCourse})`, 'gi');
+            return text.replace(regex, '<strong style="color: red;">$1</strong>');
         }
     </script>
     <script src="js/main.js"></script>

@@ -485,7 +485,7 @@
             <span>Search Affiliated Colleges</span>
             <div class="search">
                 <input type="text" oninput="AffiliatedTable('name')" id="searchAffiliation" class="searchTerm"
-                    placeholder="College Code/College Name....">
+                    placeholder="Sr. No/College Code/College Name....">
                 <button type="submit" class="searchButton">
                     <span class="material-symbols-outlined">
                         search
@@ -2422,7 +2422,7 @@
                     <td>M.S INSTITUTE OF EDUCATION SHYAMPUR JLEELPUR,GANJDUNDWARA ROAD, KASGANJ</td>
                 </tr>
                 <tr id="notfound" style=" display:none;">
-                    <td colspan="3" style="text-align: center; font-size:large;">Any Notice is not availabel</td>
+                    <td colspan="3" style="text-align: center; font-size:large;">Any College is not availabel</td>
                 </tr>
             </tbody>
         </table>
@@ -2506,17 +2506,26 @@
             const error = document.getElementById("notfound");
             let hasResults = false;
             for (let i = 1; i < rows.length; i++) {
+                const srCell = rows[i].getElementsByTagName("td")[0];
                 const nameCell = rows[i].getElementsByTagName("td")[1];
                 const dateCell = rows[i].getElementsByTagName("td")[2];
                 if (nameCell && dateCell) {
+                    const srText = srCell.textContent || srCell.innerHTML;
                     const nameText = nameCell.textContent || nameCell.innerText;
-                    const Text = dateCell.textContent || dateCell.innerText;
-                    const dateText = Text.replace(/,/g, "")
-                    const shouldDisplay = nameText.toLowerCase().includes(searchinput) || dateText.toLowerCase().includes(searchinput);
+                    const dateText = dateCell.textContent || dateCell.innerText;
+                    const shouldDisplay = nameText.toLowerCase().includes(searchinput) || dateText.toLowerCase().includes(searchinput) || srText.toLocaleLowerCase().includes(searchinput); //;
 
                     rows[i].style.display = shouldDisplay ? "" : "none";
                     if (shouldDisplay) {
                         hasResults = true;
+                        srCell.innerHTML = highlightMatch(srText, searchinput);
+                        nameCell.innerHTML = highlightMatch(nameText, searchinput);
+                        dateCell.innerHTML = highlightMatch(dateText, searchinput);
+                    }
+                    else {
+                        srCell.innerHTML = srText;
+                        nameCell.innerHTML = nameText;
+                        dateCell.innerHTML = dateText;
                     }
                 }
             }

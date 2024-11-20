@@ -115,7 +115,6 @@ window.addEventListener('load', function () {
     }, 350);
 });
 
-
 function filterTable(filterType) {
     const searchName = document.getElementById("searchName").value.toLowerCase();
     const table = document.getElementById("noticesTable");
@@ -133,10 +132,21 @@ function filterTable(filterType) {
             rows[i].style.display = shouldDisplay ? "" : "none";
             if (shouldDisplay) {
                 hasResults = true;
+                nameCell.innerHTML = highlightMatch(nameText, searchName);
+                dateCell.innerHTML = highlightMatch(dateText, searchName);
+            }
+            else {
+                nameCell.innerHTML = nameText;
+                dateCell.innerHTML = dateText;
             }
         }
     }
     error.style.display = hasResults ? "none" : "";
+}
+function highlightMatch(text, searchName) {
+    if (!searchName) return text;
+    const regex = new RegExp(`(${searchName})`, 'gi');
+    return text.replace(regex, '<strong style="color: red;">$1</strong>');
 }
 
 function newmarquee() {
@@ -162,3 +172,23 @@ function newmarquee() {
     <img src="img/new.gif" class="newgif">`;
 }
 newmarquee();
+
+
+async function convertToHindi() {
+            const englishText = document.getElementById("englishInput").value;
+
+            if (!englishText.trim()) {
+                alert("Please enter some text to translate!");
+                return;
+            }
+
+            try {
+                const response = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q=${encodeURIComponent(englishText)}`);
+                const data = await response.json();
+                const translatedText = data[0][0][0]; // Extract translated text
+                document.getElementById("hindiOutput").innerText = translatedText;
+            } catch (error) {
+                console.error("Error translating text:", error);
+                alert("Failed to translate. Please try again later.");
+            }
+        }
